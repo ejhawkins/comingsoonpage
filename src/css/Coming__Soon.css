@@ -1,0 +1,76 @@
+/**
+ * @license
+ * MyFonts Webfont Build ID 3558691, 2018-04-14T13:58:14-0400
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: Isidora-Medium by Latinotype
+ * URL: https://www.myfonts.com/fonts/latinotype/isidora/medium/
+ * Copyright: Copyright &#x00A9; 2016 by Enrique Hernandez Vasquez. All rights reserved.
+ * Licensed pageviews: 10,000
+ * 
+ * Webfont: BellugaSlantedSolid by Nicky Laatz 
+ * URL: https://www.myfonts.com/fonts/nicky-laatz/belluga/slanted-solid/
+ * Copyright: Copyright (c) 2018 by Nicky Laatz. All rights reserved.
+ * Licensed pageviews: 20,000
+ * 
+ * Webfont: Belluga by Nicky Laatz 
+ * URL: https://www.myfonts.com/fonts/nicky-laatz/belluga/regular/
+ * Copyright: Copyright (c) 2018 by Nicky Laatz. All rights reserved.
+ * Licensed pageviews: 20,000
+ * 
+ * Webfont: Bellugaslanted by Nicky Laatz 
+ * URL: https://www.myfonts.com/fonts/nicky-laatz/belluga/slanted/
+ * Copyright: Copyright (c) 2018 by Nicky Laatz. All rights reserved.
+ * Licensed pageviews: 20,000
+ * 
+ * Webfont: BellugaSolid by Nicky Laatz 
+ * URL: https://www.myfonts.com/fonts/nicky-laatz/belluga/solid/
+ * Copyright: Copyright (c) 2018 by Nicky Laatz. All rights reserved.
+ * Licensed pageviews: 20,000
+ * 
+ * Webfont: BellugaSolidWide by Nicky Laatz 
+ * URL: https://www.myfonts.com/fonts/nicky-laatz/belluga/solid-wide/
+ * Copyright: Copyright (c) 2018 by Nicky Laatz. All rights reserved.
+ * Licensed pageviews: 20,000
+ * 
+ * Webfont: BellugaWide by Nicky Laatz 
+ * URL: https://www.myfonts.com/fonts/nicky-laatz/belluga/wide/
+ * Copyright: Copyright (c) 2018 by Nicky Laatz. All rights reserved.
+ * Licensed pageviews: 20,000
+ * 
+ * 
+ * License: https://www.myfonts.com/viewlicense?type=web&buildid=3558691
+ * 
+ * © 2018 MyFonts Inc
+*/
+
+
+/* @import must be at top of file, otherwise CSS will not work */
+@import url("//hello.myfonts.net/count/364d23");
+
+  
+@font-face {font-family: 'Isidora-Medium';src: url('https://beautifullytwistedmind.net/webfonts/364D23_0_0.eot');src: url('https://beautifullytwistedmind.net/webfonts/364D23_0_0.eot?#iefix') format('embedded-opentype'),url('https://beautifullytwistedmind.net/webfonts/364D23_0_0.woff2') format('woff2'),url('https://beautifullytwistedmind.net/webfonts/364D23_0_0.woff') format('woff'),url('https://beautifullytwistedmind.net/webfonts/364D23_0_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'BellugaSlantedSolid';src: url('webfonts/364D23_1_0.eot');src: url('webfonts/364D23_1_0.eot?#iefix') format('embedded-opentype'),url('webfonts/364D23_1_0.woff2') format('woff2'),url('webfonts/364D23_1_0.woff') format('woff'),url('webfonts/364D23_1_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'Belluga';src: url('https://beautifullytwistedmind.net/webfonts/364D23_2_0.eot');src: url('https://beautifullytwistedmind.net/webfonts/364D23_2_0.eot?#iefix') format('embedded-opentype'),url('https://beautifullytwistedmind.net/webfonts/364D23_2_0.woff2') format('woff2'),url('https://beautifullytwistedmind.net/webfonts/364D23_2_0.woff') format('woff'),url('https://beautifullytwistedmind.net/webfonts/364D23_2_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'Bellugaslanted';src: url('webfonts/364D23_3_0.eot');src: url('webfonts/364D23_3_0.eot?#iefix') format('embedded-opentype'),url('webfonts/364D23_3_0.woff2') format('woff2'),url('webfonts/364D23_3_0.woff') format('woff'),url('webfonts/364D23_3_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'BellugaSolid';src: url('webfonts/364D23_4_0.eot');src: url('webfonts/364D23_4_0.eot?#iefix') format('embedded-opentype'),url('webfonts/364D23_4_0.woff2') format('woff2'),url('webfonts/364D23_4_0.woff') format('woff'),url('webfonts/364D23_4_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'BellugaSolidWide';src: url('webfonts/364D23_5_0.eot');src: url('webfonts/364D23_5_0.eot?#iefix') format('embedded-opentype'),url('webfonts/364D23_5_0.woff2') format('woff2'),url('webfonts/364D23_5_0.woff') format('woff'),url('webfonts/364D23_5_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'BellugaWide';src: url('webfonts/364D23_6_0.eot');src: url('webfonts/364D23_6_0.eot?#iefix') format('embedded-opentype'),url('webfonts/364D23_6_0.woff2') format('woff2'),url('webfonts/364D23_6_0.woff') format('woff'),url('webfonts/364D23_6_0.ttf') format('truetype');}
+ 

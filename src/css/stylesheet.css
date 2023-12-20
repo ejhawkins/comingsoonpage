@@ -1,0 +1,2595 @@
+/* @import must be at top of file, otherwise CSS will not work */
+  @import url("//hello.myfonts.net/count/36e420");
+
+    
+  @font-face {
+    font-family: 'Didonesque-BlackItalic';
+    src: url('../fonts/webfonts/36E420_0_0.eot');
+    src: url('../fonts/webfonts/36E420_0_0.eot?#iefix') format('embedded-opentype'),url('../fonts/webfonts/36E420_0_0.woff2') format('woff2'),url('../fonts/webfonts/36E420_0_0.woff') format('woff'),url('../fonts/webfonts/36E420_0_0.ttf') format('truetype');
+  }
+   
+    
+  @font-face {
+    font-family: 'Didonesque-Medium';
+    src: url('../fonts/webfonts/36E420_1_0.eot');
+    src: url('../fonts/webfonts/36E420_1_0.eot?#iefix') format('embedded-opentype'),url('../fonts/webfonts/36E420_1_0.woff2') format('woff2'),url('../fonts/webfonts/36E420_1_0.woff') format('woff'),url('../fonts/webfonts/36E420_1_0.ttf') format('truetype');
+  }
+    
+  @font-face {
+    font-family: 'Didonesque-Roman';
+    src: url('../fonts/webfonts/36E420_2_0.eot');
+    src: url('../fonts/webfonts/36E420_2_0.eot?#iefix') format('embedded-opentype'),url('../fonts/webfonts/36E420_2_0.woff2') format('woff2'),url('../fonts/webfonts/36E420_2_0.woff') format('woff'),url('../fonts/webfonts/36E420_2_0.ttf') format('truetype');
+  }
+  @font-face {
+    font-family: 'Didonesque-Italic';
+    src: url('../fonts/webfonts/371FD8_0_0.eot');
+    src: url('../fonts/webfonts/371FD8_0_0.eot?#iefix') format('embedded-opentype'),url('../fonts/webfonts/371FD8_0_0.woff2') format('woff2'),url('../fonts/webfonts/371FD8_0_0.woff') format('woff'),url('../fonts/webfonts/371FD8_0_0.ttf') format('truetype');
+  }
+    
+  @font-face {
+    font-family: 'DidonesqueGhost-Regular';
+    src: url('../fonts/webfonts/371FD8_1_0.eot');
+    src: url('../fonts/webfonts/371FD8_1_0.eot?#iefix') format('embedded-opentype'),url('../fonts/webfonts/371FD8_1_0.woff2') format('woff2'),url('../fonts/webfonts/371FD8_1_0.woff') format('woff'),url('../fonts/webfonts/371FD8_1_0.ttf') format('truetype');
+  }
+     
+  @font-face {
+    font-family: 'LubalinGraphStd-Book';
+    src: url('../fonts/webfonts/371FD8_2_0.eot');
+    src: url('../fonts/webfonts/371FD8_2_0.eot?#iefix') format('embedded-opentype'),url('../fonts/webfonts/371FD8_2_0.woff2') format('woff2'),url('../fonts/webfonts/371FD8_2_0.woff') format('woff'),url('../fonts/webfonts/371FD8_2_0.ttf') format('truetype');
+  }
+
+  @import url(https://fonts.googleapis.com/css?family=Roboto:400,900italic,900,700italic,700,500italic,500,400italic,300italic,300,100italic,100);
+      * {
+        box-sizing: border-box;
+        margin: 0;
+      }
+
+
+
+
+  a{
+    color:#88CE02;
+  }
+
+  .flex-container{
+      display: flex;
+      max-width: 100%;
+  }
+
+  #box{
+    position:relative;
+    margin-top:40px;
+  }
+
+  #instafeed img {
+      width: 30%;
+      padding-left: 10px;
+  }  
+
+  #instafeed-quirky img {
+      width: 30%;
+      padding-left: 10px;
+  }  
+
+  #instafeed-fun img {
+      width: 30%;
+      padding-left: 10px;
+  } 
+
+  #instafeed-fab img {
+      width: 30%;
+      padding-left: 10px;
+      padding-top: 10px;
+  } 
+
+  #instafeed-news img {
+      width: 30%;
+      padding-left: 10px;
+  } 
+      
+      
+      
+  .sidenav{
+      height: 100%;
+      width: 0;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: #111;
+      /* No real design for this */
+      overflow-x: hidden;
+      transition: 0.5s;
+      padding-top: 60px;
+      text-align: center;
+  }
+
+  .sidenav h1{
+      color: #f7f7f7;
+      font-size: 48px !important;
+  }
+
+  .sidebar a{
+      padding: 8px 8px 8px 32px;
+      text-decoration: none;
+      font-size: 25px;
+      color: yellow;
+      display: block;
+      transition: 0.3s;
+  }
+
+  .sidenav .closebtn a{
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 36px;
+      margin-left: 50px;
+      color: white;
+  }
+
+  .sidenav p{
+      color: white;
+      font-family: 'LubalinGraphStd-Book'; 
+  }
+
+  #profile-image{
+      margin-right: 40px;
+  }
+
+  #main{
+      transition: margin-left .5s;
+      padding: 16px;
+  }
+
+  .twitter li {
+      color: white;
+  }
+
+  .twitter li a{ 
+      color: #428bca;
+  }
+
+  @media screen and (max-height: 450px){
+      .sidenav{
+          padding-top: 15px;
+      }
+      .sidenav a{
+          font-size: 18px;
+      }
+  }
+
+  .ease{
+  	-webkit-transition: all 400ms ease-in-out;
+  	-moz-transition: all 400ms ease-in-out;
+  	-o-transition: all 400ms ease-in-out;
+  	-ms-transition: all 400ms ease-in-out;
+  	transition: all 400ms ease-in-out;
+  }
+
+  #socialbuttons:hover{
+  	-webkit-box-shadow: inset 0 0 0 3px #212529;
+  	-moz-box-shadow: inset 0 0 0 3px #212529;
+  	-o-box-shadow: inset 0 0 0 3px #212529;
+  	-ms-box-shadow: inset 0 0 0 3px #212529;
+  	box-shadow: inset 0 0 0 3px #212529;
+  	color: #212529;
+  	background-color: #f7f7f7;
+  }
+
+  /* TO Do add suggestions from Udacity */
+      a, a:visited {
+      text-decoration: none;
+      color: #000 !important;
+      }
+      a:hover {
+      text-decoration: none !important;
+      color: #FAC9C4 !important;
+      }
+
+      h1, p, h2, h3, h4, ul, li, div {
+        margin: 0;
+        padding: 0;
+      }
+
+      .loading-page {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+      .loading-page .counter {
+        text-align: center;
+      }
+      .loading-page .counter p {
+        font-size: 40px;
+        font-weight: 100;
+        color: #000;
+      }
+      .loading-page .counter h1 {
+        color: black;
+        font-size: 60px;
+        margin-top: -10px;
+      }
+      .loading-page .counter hr {
+        background: #f60d54;
+        border: none;
+        height: 1px;
+      }
+      .loading-page .counter {
+        position: relative;
+        width: 200px;
+      }
+      .loading-page .counter h1.abs {
+        position: absolute;
+        top: 0;
+        width: 100%;
+      }
+      .loading-page .counter .color {
+        width: 0px;
+        overflow: hidden;
+        color: #f60d54;
+      }
+
+  body, 
+  html {
+    /*height: 200%;*/
+    background-color: #f7f7f7 !important;
+  }
+
+  .blog-footer{
+      display: none;
+  }
+
+  .turn-right {
+      -webkit-transform: perspective(9999px) rotate(3deg);
+              transform: perspective(9999px) rotate(3deg);
+  }
+
+  #loaded {
+    display: none;
+  }
+
+  #time{
+    display: flex;
+  }
+
+  .hello{
+    display: block !important;
+  }
+
+  .good-bye{
+    display: none !important;
+  }
+
+
+
+  h1 {
+  display: inline-block; 
+  position: relative; 
+  font: 900 3em/1.2 Rubik, sans-serif; 
+  padding: 0 .2em; 
+  white-space: nowrap; 
+  color: saddlebrown; 
+  /*outline: solid 1px maroon; */
+  }
+
+  h1 div{
+  position: absolute; 
+  top: 0; left: 0; 
+  padding: inherit; 
+  font: inherit; 
+  white-space: inherit; 
+  background: burlywood; 
+  animation-name: bravo; 
+  animation-duration: 1000ms; 
+  animation-iteration-count: infinite; 
+  animation-direction: alternate; 
+  animation-timing-function: ease-in-out; 
+  }
+
+  @keyframes bravo {
+    from {top: 0px; }
+    to {top: 20px; }
+  }
+
+
+  #loading {
+    z-index: 10;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 90vh;
+  }
+
+  h1, 
+  h2, 
+  h3, 
+  h4 {
+  	font-family: 'Didonesque-BlackItalic';
+  }
+
+  h1 {
+      font-family: 'Didonesque-BlackItalic' !important;
+  	font-size: 58px !important;
+  }
+
+  h2 {
+  	font-size: 20px;
+  }
+
+  h3 {
+    font-family: 'Didonesque-Roman' !important;
+  }
+
+  a, 
+  a:visited {
+  	text-decoration: none;
+  	color: #2e639e;
+  }
+
+  a:hover {
+  	text-decoration: underline;
+  }
+
+  nav{
+    font-family: 'LubalinGraphStd-Book'; 
+  }
+
+
+  li{
+    background: white;
+  }
+  /* Desktops and laptops ----------- */
+  @media only screen  and (min-width : 1020px) {
+    .blue{
+       display: none !important;
+    }
+       
+  }
+  /*
+  .loading {
+    max-width: 50%;
+    line-height: 1.4;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .loading__anim {
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+    border: 5px solid rgba(189,189,189 ,0.25);
+    border-left-color: rgba(3,155,229 ,1);
+    border-top-color: rgba(3,155,229 ,1);
+    }
+
+    @keyframes rotate {
+   to {
+    transform: rotate(1turn)
+    animation: rotate 600ms infinite linear;
+   }
+  }
+  */
+
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0 !important; ;
+    top: 0 !important; ;
+    width: 100% !important;  ; /* Full width */
+    height: 100% !important; ; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0) !important; /* Fallback color */
+    background-color: rgba(0,0,0,0.4) !important; /* Black w/ opacity */
+    margin-left: 0px !important;
+  }
+
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 5% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .menu{
+    display: inline-block;
+    text-align: right;
+    width: 100%;
+    padding-right: 50px;
+    margin-top: -5px; 
+    font-size: 45px;
+  }
+
+  nav a{
+    position: absolute;
+  }
+
+  li{
+    display: inline-block;
+  }
+
+  li:hover{
+    color: pink;
+  }
+
+  nav{
+    position: relative;
+    display: inline-block;
+    z-index: 100;
+  }
+
+  nav #content{
+    display: none;
+    position: absolute;
+    z-index: 1;
+  }
+
+  nav #content li a:hover{
+    color: gray;
+  }
+
+  .show{
+      display: block !important;
+  }
+  .logo{
+    margin-top: -105px;
+  }
+
+  #logo {
+    z-index: 100;
+    padding: 10px;
+    width: 100px;
+  }
+
+  #socialbuttons{
+      border-radius: 50px;
+      background: black;
+      padding: 9px;
+      color: white;
+      font-size: 20px;
+  }
+  
+  
+
+
+#smoothiedrink {
+    max-width: 19%;
+    background: none;
+    order: 1;
+    overflow: visible;
+    margin-left: -48px;
+    margin-top: -390px;
+    flex: 2 0 20em;
+    flex-basis: 0;
+}
+
+#dish {
+    max-width: 25%;
+    z-index: 1000;
+    order: 2;
+    overflow: visible;
+    background: none;
+    margin-top: -560px;
+    margin-left: -100px;
+    flex: 2 0 20em;
+    flex-basis: 0;
+}
+
+#dish2 {
+    max-width: 40%;
+    z-index: 101000 !important;
+    background: none;
+    order: 3;
+    left: 53px;
+    margin-top: -400px;
+    flex: 2 0 20em;
+    flex-basis: 0;
+}
+
+#computer {
+    max-width: 64%;
+    background: none;
+    order: 4;
+    overflow: visible;
+    flex: 4 0 20em;
+    flex-basis: 0;
+    left: -56px;
+}
+
+#miniteapot {
+    max-width: 20%;
+    z-index: 1000;
+    background: none;
+    order: 5;
+    flex: 2 0 20em;
+    flex-basis: 0;
+    margin-top: 90px;
+}
+
+#grain {
+    max-width: 86%;
+    background: none;
+    margin-top: -1623px;
+    margin-left: -347px;
+    flex: 2 0 20em;
+    flex-basis: 0;
+    order: 1;
+    z-index: 1000;
+}
+
+#coffeecup {
+    max-width: 23%;
+    z-index: 1000;
+    background: none;
+    margin-top: -2400px;
+    left: -241px;
+    flex: 2 0 20em;
+    flex-basis: 0;
+    order: 2;
+}
+
+#metalclip {
+    max-width: 20%;
+    background: none;
+    margin-top: -2304px;
+    left: -335px;
+    flex: 2 0 9em;
+    flex-basis: 0;
+    order: 3;
+    z-index: 1000;
+}
+
+#smallvase {
+    max-width: 28%;
+    background: none;
+    margin-top: -1765px;
+    left: 90px;
+    flex: 2 0 20em;
+    flex-basis: 0;
+    order: 4;
+    z-index: 1000;
+}
+
+#graintwo {
+    max-width: 25%;
+    background: none;
+    margin-top: -2236px;
+    margin-left: -141px;
+    flex: 2 0 20em;
+    flex-basis: 0;
+    order: 1;
+    z-index: 1000;
+}
+
+#grainthree {
+    max-width: 81%;
+    background: none;
+    margin-top: -1283px;
+    left: 173px;
+    flex: 2 0 20em;
+    flex-basis: 0;
+    order: 1;
+    z-index: 1000;
+}
+
+#journal {
+    max-width: 30%;
+    background: none;
+    margin-top: -1848px;
+    left: -327px;
+    flex: 2 0 20em;
+    flex-basis: 0;
+    order: 1;
+    z-index: 1000;
+    overflow: visible;
+}
+
+#goldpen {
+    max-width: 22%;
+    background: none;
+    margin-top: -1513px;
+    left: 420px;
+    flex: 2 0 20em;
+    flex-basis: 0;
+    order: 1;
+    z-index: 1000;
+}
+
+
+   #hero {
+    position: fixed; 
+    top: 600px;
+    left: 380px;
+   }
+
+   #hero h2 {
+      font-family: 'Didonesque-BlackItalic';
+      font-size: 67px;
+   }
+
+   #hero h1 {
+      font-family: 'Didonesque-Roman' !important;
+      font-size: 100px !important;
+      line-height: .5;
+      margin-left: -12px;
+   }
+
+   #hero h3{
+      margin-bottom: 65px;
+      margin-left: 10px;
+      font-family: 'LubalinGraphStd-Book' !Important;
+      
+   }
+   
+   #instafeed a img{
+    padding-right: 5px;
+    padding-bottom: 5px;
+  }
+
+   .socialmediabuttons {
+      display: inline-table;
+      margin-left: 10px;
+    }
+
+   #scrollnotifier {
+    top: 15px;
+    font-family: 'LubalinGraphStd-Book';
+    position: relative;
+    text-align: center;
+   }
+
+   .blue #background{
+     display: none;
+   }
+
+   #greeting{
+     margin-left: 0px !important;
+     white-space:nowrap;
+   }
+   
+  .fade-in{
+     margin-left: 100px;
+     opacity: 1 !important;
+     transform: translateY(0px);
+   }
+
+   #firstcloud {
+    
+   }
+
+   #purse {
+    width: 500px;
+    position: absolute;
+    left: 0px;
+    margin-left: 295px;
+    top: 200px;
+   }
+
+   #secondcloud {
+    width: 700px;
+    position: relative;
+    margin-left: -200px;
+   }
+
+   #earrings {
+      position: absolute;
+      right: 400px;
+   }
+
+   #watch {
+      position: relative;
+      top: 130px;
+      right: -120px;
+  }
+
+  #sunglasses { 
+      top: -100px;
+      position: absolute;
+      right: 600px;
+  }
+
+  #portfolio {
+    padding: 20px;
+  }
+
+  #details{
+    width: 40%;
+    display: inline-block;
+  }
+
+  #details h3{
+    font-family: 'Didonesque-Italic';
+  }
+
+  #description{
+    font-family: 'LubalinGraphStd-Book';
+  }
+
+  #images {
+    width: 60%;
+    display: inline-block;
+    float: left;
+    text-align: center;
+  }
+
+  #thumbnail {
+    float:left;
+  }
+
+  #portfoliocontainer {
+    margin-left: 15%;
+    font-family: 'Didonesque-Roman' !important;
+    display: none;
+  }
+
+  #portfoliocontainer h3{
+     font-family: 'LubalinGraphStd-Book'!important;
+  }
+  .portfolioimage {
+    width:100%;
+  }
+
+  #thumb h1 {
+    font-family: 'Didonesque-Roman' !important;
+    font-size: 50px;
+    margin: 0 auto;
+  }
+
+  #fashionthumb h1 {
+    font-family: 'Didonesque-Roman' !important;
+    font-size: 50px;
+    margin: 0 auto;
+  }
+
+
+
+  #thirdcloud {
+    width: 700px;
+    position: absolute; 
+    top: 10%; 
+    left: 0px;
+  }
+
+  #fourthcloud { 
+    width: 700px;
+    position: absolute;
+    top: 10%; 
+    right: 0px;
+  }
+
+  #fashionportfoliocontainer {
+    margin-top: 275px;
+    font-family: 'Didonesque-Roman';
+
+  }
+
+  #anothermetalclip {
+    position: absolute; 
+    right: 420px;
+  }
+
+  #pencil {
+    position: absolute; 
+    right: 248px;
+    top: -20px;
+  }
+
+  .fashion-container{
+      position: absolute;
+      top: 376px;
+      width: 100%;
+  }
+
+  #keyboard {
+      position: absolute;
+      top: -90px;
+      right: 0;
+  }
+  #fashionportfolio {
+    width: 40%;
+    display: inline-block;
+    float: right;
+  }
+
+  #fashionimage {
+    width: 60%;
+    display: inline-block;
+    text-align: center;
+  }
+
+  #thumbnail-slider {
+    margin-top: 200px;
+  }
+
+  #stiletto {
+    position: absolute;
+    left: 300px;
+    bottom: 150px;
+  }
+
+  #fifthcloud {
+    margin-top: 75px;
+    position: absolute;
+    top: -150px; 
+    right: 0px;
+  }
+
+  #secondcomputer {
+    position: absolute; 
+    right: 285px;
+  }
+
+  #pen {
+    position: absolute; 
+    top: 0px; 
+    right: 95px;
+    width: 45%;
+  }
+
+  #candle {
+    position: absolute; 
+    top: 25px; 
+    left: 9px;
+  }
+
+  #secondcandle {
+    position: absolute; 
+    top: 30px; 
+    right: -80px;
+  }
+
+  #perfume {
+    position: absolute; 
+    top: 70px; 
+    left: 245px;
+  }
+
+  #cellphone {
+    position: absolute; 
+    top: 15px; 
+    right: 0px;
+  }
+
+  #eyeshadowbrush {
+    position: absolute; 
+    top: 120px; 
+    left: 0px;
+  }
+
+  #soap {
+    position: absolute; 
+    top: 0px; 
+    left: 0px;
+  }
+
+  #thirdcandle {
+    position: absolute; 
+    top: 0px; 
+    left: 180px;
+  }
+
+  #cream {
+    position: absolute; 
+    top: 350px; 
+    left: 0px;
+  }
+
+  #bowl {
+    position: absolute; 
+    top: 240px; 
+    left: 75px;
+  }
+
+  #blogheader {
+    text-align: center;
+  }
+
+  #animate5 {
+    padding-bottom: 350px;
+  }
+
+  #blogheader h1 {
+    font-family: 'Didonesque-Medium' !important;
+    font-size: 80.5px !important;
+    text-transform: uppercase;
+  }
+
+  #pinContainer {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  #rose {
+    position: absolute; 
+    top: 100px; 
+    right: -55px;
+  }
+
+  .panel {
+    /* height: 100%; */
+    width: 100%;
+    position: relative;
+  }
+
+  .clearfix:after {
+      content: ".";
+      display: block;
+      clear: both;
+      visibility: hidden;
+      line-height: 0;
+      height: 0;
+  }
+
+  .clearfix {
+      display: inline-block;
+  }
+
+  html[xmlns] .clearfix {
+      display: block;
+  }
+
+  * html .clearfix {
+      height: 1%;
+  }
+
+  /*
+    colors
+  */
+
+  .box1.outline, .box2.outline, .box3.outline {
+    border: 1px solid white;
+  }
+
+  .skin {
+    background-color: #ED9F4C;
+  }
+  .black {
+    background-color: #000000;
+  }
+  .white {
+    background-color: #FFFFFF;
+  }
+
+  /* Removes the default 20px margin and creates some padding space for the indicators and controls */
+  .carousel {
+      margin-bottom: 0;
+    padding: 0 40px 30px 40px;
+  }
+  /* Reposition the controls slightly */
+  .carousel-control {
+    left: -12px;
+  }
+  .carousel-control.right {
+    right: -12px;
+  }
+  /* Changes the position of the indicators */
+  .carousel-indicators {
+    right: 50%;
+    top: auto;
+    bottom: 0px;
+    margin-right: -19px;
+  }
+  /* Changes the colour of the indicators */
+  .carousel-indicators li {
+    background: #c0c0c0;
+  }
+  .carousel-indicators .active {
+  background: #333333;
+  }
+
+  .product-slider { 
+    padding: 45px; 
+  }
+
+  .product-slider #carousel { 
+    border: 4px solid #1089c0; 
+    margin: 0; 
+  }
+
+  .product-slider #thumbcarousel { 
+    margin: 12px 0 0; 
+    padding: 0 45px; 
+  }
+
+  .product-slider #thumbcarousel .item { 
+    text-align: center; 
+  }
+
+  .product-slider #thumbcarousel .item .thumb { 
+    border: 4px solid #cecece;
+    width: 20%; 
+    margin: 0 2%;
+    display: inline-block; 
+    vertical-align: middle; 
+    cursor: pointer; 
+    max-width: 98px; 
+  }
+
+  .product-slider #thumbcarousel .item .thumb:hover { 
+    border-color: #1089c0; 
+  }
+
+  .product-slider .item img { 
+    width: 100%; 
+    height: auto; 
+  }
+
+  .carousel-control { 
+    color: #0284b8; 
+    text-align: center; 
+    text-shadow: none; 
+    font-size: 30px; 
+    width: 30px; 
+    height: 30px; 
+    line-height: 20px; 
+    top: 23%; 
+  }
+
+  .carousel-control:hover, .carousel-control:focus, .carousel-control:active { 
+    color: #333; 
+  }
+
+  .carousel-caption, .carousel-control .fa { 
+    font: normal normal normal 30px/26px FontAwesome; 
+  }
+  .carousel-control { 
+    background-color: rgba(0, 0, 0, 0); 
+    bottom: auto; 
+    font-size: 20px; 
+    left: 0; 
+    position: absolute; 
+    top: 30%; 
+    width: auto; 
+  }
+
+  .carousel-control.right, .carousel-control.left { 
+    background-color: rgba(0, 0, 0, 0); 
+    background-image: none; 
+  }
+
+
+  /* Background */ 
+
+  .bg {
+  	box-sizing: border-box;
+  	overflow: hidden;
+  	transform: translatey(0px);
+  	animation: float 6s ease-in-out infinite;
+  }
+
+  .ui-bg {
+    box-sizing: border-box;
+    overflow: hidden;
+    transform: translatey(0px);
+    animation: float 1s ease-in-out infinite;
+  }
+
+
+
+  @keyframes float {
+  	0% {
+  		transform: translatey(0px);
+  	}
+  	50% {
+  		transform: translatey(-20px);
+  	}
+  	100% {
+  		transform: translatey(0px);
+  	}
+  }
+
+
+  /*
+  	Containers
+  */
+
+  .container {
+    position: relative;
+    width: 50%;
+  }
+
+  /* First section for the header */
+  /* Rename Code*/
+  .blue {
+    /*background-image: url('http://ericajhawkins.com/images/background.jpg');*/
+  	background-size: contain;
+  	background-repeat: no-repeat;
+  	background-color: #f5f5f5;
+      position: relative;
+      margin-top: 100px;
+      height: 1500px;
+      display: none;
+  }
+
+  .bcg-parallax{
+    animation: float 6s ease-in-out infinite;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    height: 750px;
+  }
+
+  .bcg{
+    /* background: url('https://image.shutterstock.com/z/stock-photo-dreamy-abstract-background-in-pastel-tones-joyful-positive-atmosphere-770573815.jpg') no-repeat;*/
+    position: absolute;
+    height: 140%;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+  }
+
+  .content-wrapper{
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1140px;
+    positon: relative;
+    z-index: 2;
+  }
+
+  #main{
+    position: relative; 
+    background: none;
+  }
+
+  #name{
+      margin-top: -90px;
+  }
+
+  .turqoise {
+  	background-color: #f7f7f7;
+    z-index: 100;
+    text-align: center;
+    display: none;
+  }
+
+  .green {
+    background-color: none;
+    z-index: 200;
+    text-align: center;
+    margin-top: 50px;
+    display: none;
+  }
+
+  .bordeaux {
+    background-color: #f7f7f7;
+    z-index: 200;
+    display: none;
+  }
+
+  .bordeaux h1 {
+
+  }
+
+  .brown {
+  	background-color: #f7f7f7;
+     display: none;
+     display: none;
+  }
+
+
+  .yellow {
+    z-index: 300;
+    background-color: #f7f7f7;
+    width: 100%;
+    height: 35%;
+    display: none;
+  }
+
+  #inadaydream {
+    position: absolute;
+    top: -250px !important;
+    right: 0px;
+  }
+
+  .orange {
+    z-index: 400;
+    width: 100%;
+    text-align: right;
+     display: none;
+
+  }
+
+  .red {
+    background-color: #f7f7f7;
+    z-index: 500;
+    height: 80% !important;
+    background-position-x: right;
+    display: none;
+  }
+
+  .teal {
+    background-color: #f7f7f7;
+    z-index: 800;
+    width: 100%;
+    padding-bottom: 100px;
+    display: none;
+  }
+
+  .pink {
+    z-index: 600;
+    width: 100%;
+    z-index: 900;
+    display: none;
+  }
+
+  .gray {
+    /*background-image: url("https://cmkt-image-prd.global.ssl.fastly.net/0.1.0/ps/2526558/1360/906/m1/fpnw/wm1/a4yrdkourtsunamxy6byg7sdtueek5cphrgogisb3jd56kht0bqc6bnpzqh57tbv-.jpg?1491843058&s=800531f97a0dfcefea005997e113d030");
+   */background-color: #f7f7f7;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 10000;
+    height:250%;
+    font-family: 'LubalinGraphStd-Book';
+    /* padding-top: 400px; */
+
+  }
+
+  .gray h1{
+     font-family: 'DidonesqueGhost-Regular' !important;
+  }
+
+  /* Rename Code*/
+
+  /* Images */	  
+  .row {
+    display: flex;
+  }
+
+  .column {
+    flex: 33.33%;
+    padding: 5px;
+  }
+
+  .item {
+    position: relative;
+    overflow: hidden;
+    max-width: 255.5px;
+    text-align: center;
+  }
+  .item img {
+    max-width: 100%;
+    
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  .item:hover img {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }	  
+
+  .item-2 {
+    position: relative;
+    margin: 2%;
+    overflow: hidden;
+    max-width: 300.8px;
+    text-align: center;
+  }
+  .item-2 img {
+    max-width: 100%;
+    
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  .item-2:hover img {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }	
+
+
+  .image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 100%;
+    right: 0;
+    background-color: #008CBA;
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s ease;
+  }
+
+  .container:hover .overlay {
+    width: 100%;
+    left: 0;
+  }
+
+  .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    white-space: nowrap;
+  }
+
+  /*
+  	Elements
+  */
+
+  /* Preview */
+  #detail h3{
+
+  }
+
+  #thumb {
+  	display: none;
+  }
+
+  #fashionthumb {
+    display: none;
+  }
+
+  .preview {
+  	width: 100%; 
+  	height: 600px; 
+  	background: white;
+  	position: absolute;
+  	z-index: 100;
+  	display: block !important;
+  }
+
+  .fashionpreview {
+    width: 100%; 
+    height: 600px; 
+    background: white;
+    position: absolute;
+    z-index: 1000;
+    display: block !important;
+  }
+
+  #animate1 {
+    position: relative;
+
+  }
+
+  #animate2 {
+    margin-left: -600px;
+  }
+
+  #animate3 {
+    margin-left: 0px;
+  }
+
+  #animate4 {
+    margin-left: 0px;
+  }
+
+  .blog h3 a {
+     font-family: 'Didonesque-Roman' !important;
+  }
+
+  .blog h2 {
+     font-family: 'Didonesque-Roman' !important;
+  }
+
+  .blogbg {
+    padding-bottom: 350px;
+  }
+  
+  
+/* Small Laptop or Landscape iPad */ 
+ @media only screen 
+    and (min-device-width: 1000px) 
+    and (max-device-width: 1025px) 
+    and (-webkit-min-device-pixel-ratio: 1) {
+        .blue{
+       display: none !important;
+    }
+
+  /* Original Grain*/
+  #grain {
+    max-width: 81%;
+    background: none;
+    margin-top: -2020px;
+    margin-left: -264px;
+    flex: 2 0 20em;
+    flex-basis: 0;
+    order: 1;
+    z-index: 1000;
+  }
+
+  #grain img{
+      width: 100%;
+  }
+
+  /* Original Grain Two */
+  #graintwo {
+    max-width: 25%;
+    background: none;
+    margin-top: -2400px;
+    margin-left: -115px;
+    flex: 2 0 20em;
+    flex-basis: 0;
+    order: 1;
+    z-index: 1000;
+  }
+
+  #graintwo img{
+      width: 100%;
+  }
+
+/* Original Smoothie */
+  #smoothiedrink {
+      max-width: 19%;
+      background: none;
+      order: 1;
+      overflow: visible;
+      margin-left: -48px;
+      margin-top: -390px;
+      flex: 2 0 20em;
+      flex-basis: 0
+  }
+
+  #smoothiedrink img{
+      max-width: 100%;
+  }
+
+  /* Original Journal*/
+  #journal {
+    max-width: 30%;
+    background: none;
+    margin-top: -2060px;
+    left: -224px;
+    flex: 2 0 20em;
+    flex-basis: 0;
+    order: 1;
+    z-index: 1000;
+    overflow: visible;
+  }
+
+  #journal img{
+      width: 100%;
+  }
+
+  /* Original Coffee Cup*/
+  #coffeecup {
+    max-width: 23%;
+    z-index: 1000;
+    background: none;
+    margin-top: -2550px;
+    left: -165px;
+    flex: 2 0 20em;
+    flex-basis: 0;
+    order: 2;
+  }
+
+  #coffeecup img{
+      width: 100%;
+  }
+
+/* Original Dish */
+  #dish {
+      max-width: 25%;
+      z-index: 1000;
+      order: 2;
+      overflow: visible;
+      background: none;
+      margin-top: -560px;
+      margin-left: -100px;
+      flex: 2 0 20em;
+      flex-basis: 0
+  }
+
+  #dish img{
+      width: 100%;
+  }
+
+  /* Original Metal Clip */
+  #metalclip {
+    max-width: 20%;
+    background: none;
+    margin-top: -2450px;
+    left: -225px;
+    flex: 2 0 9em;
+    flex-basis: 0;
+    order: 3;
+    z-index: 1000;
+  }
+
+  #metalclip img{
+      width: 100%;
+  }
+
+/* Original Dish 2 */
+  #dish2 {
+    max-width: 40%;
+    z-index: 101000 !important;
+    background: none;
+    order: 3;
+    margin-left: -44px;
+    margin-top: -400px;
+    flex: 2 0 20em;
+    flex-basis: 0
+  }
+
+  #dish2 img{
+      width: 100%;
+  }
+
+/* Original Computer */
+    #computer {
+        max-width: 64%;
+        background: none;
+        order: 4;
+        overflow: visible;
+        flex: 4 0 20em;
+        flex-basis: 0;
+        left: 10px;
+    }
+
+  #computer img{
+      width: 100%;
+    }
+
+   /* Original Teapot */
+  #miniteapot {
+      max-width: 20%;
+      z-index: 1000;
+      background: none;
+      order: 5;
+      flex: 2 0 20em;
+      flex-basis: 0
+  }
+
+  #miniteapot img{
+      width: 100%;
+  }
+
+  /* Original Gold Pen */
+  #goldpen {
+    max-width: 22%;
+    background: none;
+    margin-top: -1900px;
+    left: 281px;
+    flex: 2 0 20em;
+    flex-basis: 0;
+    order: 1;
+    z-index: 1000
+  }
+
+  #goldpen img{
+      width: 100%;
+  }
+
+
+  /* Original Small Vase */
+  #smallvase {
+    max-width: 28%;
+    background: none;
+    margin-top: -2130px;
+    left: 90px;
+    flex: 2 0 20em;
+    flex-basis: 0;
+    order: 4;
+    z-index: 1000;
+  }
+
+  #smallvase img{
+      width: 100%;
+  }
+
+  /* Original Grain Three */
+  #grainthree {
+    max-width: 81%;
+    background: none;
+    margin-top: -1770px;
+    left: 137px;
+    flex: 2 0 20em;
+    flex-basis: 0;
+    order: 1;
+    z-index: 1000;
+  } 
+
+  #grainthree img{
+      width: 100%;
+  }
+        
+        #smoothiedrink {
+        max-width: 25%;
+        z-index: 1000;
+        order: 2;
+        overflow: visible;
+        background: none;
+        margin-top: -420px;
+        margin-left: -85px;
+        flex: 2 0 20em;
+        flex-basis: 0;
+        }
+        #dish {
+            max-width: 25%;
+            z-index: 1000;
+            order: 2;
+            overflow: visible;
+            background: none;
+            margin-top: -320px;
+            margin-left: 12px;
+            flex: 2 0 20em;
+            flex-basis: 0;
+        }
+        #dish2 {
+            max-width: 40%;
+            z-index: 101000 !important;
+            background: none;
+            order: 3;
+            margin-left: 25px;
+            margin-top: -250px;
+            flex: 2 0 20em;
+            flex-basis: 0;
+        }
+        #computer {
+            max-width: 64%;
+            background: none;
+            order: 4;
+            overflow: visible;
+            flex: 4 0 20em;
+            flex-basis: 0;
+            margin-left: -28px;
+        }
+        #miniteapot {
+        max-width: 47%;
+        z-index: 1000;
+        background: none;
+        order: 5;
+        flex: 2 0 20em;
+        flex-basis: 0;
+        margin-left: 100px;
+        margin-top: -50px;
+    }
+           
+}
+
+/* iPad */ 
+
+@media only screen 
+    and (min-device-width: 767px) 
+    and (max-device-width: 1000px) 
+    and (orientation: portrait) 
+    and (-webkit-min-device-pixel-ratio: 1) {
+        
+  /* Tablet Header */
+  header{
+      overflow: hidden;
+  }
+  
+  /* Tablet Grain*/
+  #grain {
+    max-width: 81%;
+    background: none;
+    flex-basis: 0;
+    order: 1;
+    z-index: 1000;
+    top: -250px;
+    left: 93px;
+  }
+
+  /* Tablet Grain Two */
+  #graintwo {
+    max-width: 25%;
+    background: none;
+    flex-basis: 0;
+    order: 1;
+    z-index: 1000;
+    left: 65px;
+    top: -90px;
+
+  }
+
+  /* Tablet Smoothie */
+  #smoothiedrink {
+    max-width: 19%;
+    background: none;
+    order: 1;
+    overflow: visible;
+    flex-basis: 0;
+    margin-top: -223px;
+    z-index: 1000;
+  }
+
+  /* Tablet Journal*/
+  #journal {
+    max-width: 30%;
+    background: none;
+    flex-basis: 0;
+    order: 2;
+    z-index: 1000;
+    overflow: visible;
+    top: -190px;
+    left: -585px;
+  }
+
+  /* Tablet Coffee Cup*/
+  #coffeecup {
+    max-width: 23%;
+    z-index: 1005;
+    background: none;
+    flex-basis: 0;
+    order: 2;
+    left: -143px;
+    top: -92px;
+  }
+
+/* Tablet Dish */
+  #dish {
+    max-width: 25%;
+    z-index: 1006;
+    order: 2;
+    overflow: visible;
+    background: none;
+    flex-basis: 0;
+    left: 73px;
+    margin-top: -320px;
+  }
+
+  /* Tablet Metal Clip */
+  #metalclip {
+    max-width: 20%;
+    background: none;
+    flex-basis: 0;
+    order: 3;
+    z-index: 1007;
+    left: -185px;
+  }
+
+
+/* Tablet Dish 2 */
+  #dish2 {
+    max-width: 40%;
+    z-index: 101000 !important;
+    background: none;
+    order: 3;
+    flex-basis: 0;
+    margin-top: -300px;
+    left: 71px;
+  }
+
+
+/* Tablet Computer */
+    #computer {
+    max-width: 64%;
+    background: none;
+    order: 4;
+    overflow: visible;
+    flex-basis: 0;
+    left: -6px;
+    top: -50px;
+
+    }
+
+   /* Tablet Teapot */
+  #miniteapot {
+    max-width: 20%;
+    z-index: 1000;
+    background: none;
+    order: 5;
+    flex-basis: 0;
+    top: -55px;
+  }
+
+  /* Tabletl Gold Pen */
+  #goldpen {
+    max-width: 22%;
+    background: none;
+    flex-basis: 0;
+    order: 1;
+    z-index: 1000;
+    top: -290px;
+    left: 489px;
+  }
+
+
+  /* Tablet Small Vase */
+  #smallvase {
+    max-width: 28%;
+    background: none;
+    flex-basis: 0;
+    order: 4;
+    z-index: 1000;
+  }
+
+  /* Tablet Grain Three */
+  #grainthree {
+    max-width: 81%;
+    background: none;
+    flex-basis: 0;
+    order: 1;
+    z-index: 1000;
+    top: -290px;
+    left: 350px;
+  } 
+
+
+}
+
+/* Mini Tablet */
+  @media only screen 
+    and (min-device-width: 631px) 
+    and (max-device-width: 766px) 
+    and (orientation: portrait) 
+    and (-webkit-min-device-pixel-ratio: 1) {
+        
+    /* Mini Tablet Dish */    
+    #dish {
+        width: 28%;
+        z-index: 1000;
+        order: 2;
+        overflow: visible;
+        background: none;
+        top: -90px;
+        left: -20px;
+    }
+    
+    /* Mini Tablet Dish 2 */   
+    #dish2 {
+        max-width: 40%;
+        z-index: 101000 !important;
+        background: none;
+        order: 3;
+        left: -10px;
+        top: -80px;
+        flex: 2 0 20em;
+        flex-basis: 0;
+    }
+
+    /* Mini Tablet Computer */   
+    #computer {
+        max-width: 64%;
+        background: none;
+        order: 4;
+        overflow: visible;
+        flex: 4 0 20em;
+        flex-basis: 0;
+        left: -25px;
+        top: -50px;
+    }  
+    
+    /* Mini Tablet Mini Teapot */   
+    #miniteapot {
+        max-width: 20%;
+        z-index: 1000;
+        background: none;
+        order: 5;
+        flex: 2 0 20em;
+        flex-basis: 0;
+        top: -6px;
+    }    
+    
+    #smoothiedrink {
+        max-width: 19%;
+        background: none;
+        order: 1;
+        overflow: visible;
+        margin-left: -40px;
+        margin-top: -220px;
+        flex: 2 0 20em;
+        flex-basis: 0;
+    }
+
+    #hero {
+      position: absolute;
+      top: 400px;
+      left: 0px;
+      width: 100%;
+      text-align: center;
+    }
+
+    #portfoliocontainer .row .item {
+      max-width: 160.5px;
+    }
+
+    #hero .socialmediabuttons {
+      margin-left: 0px;
+    }
+
+    #inadaydream {
+      position: absolute;
+      top: 250px !important;
+      right: 0px;
+    }
+
+    .row .item-2 {
+      position: relative;
+      margin: 2%;
+      overflow: hidden;
+      max-width: 212px;
+      text-align: center;
+    }
+
+    #fashionportfoliocontainer #animate4 {
+      margin-left: 36px;
+    }
+
+    .red {
+      height: 50% !important;
+    }
+
+    .gray .blog{
+      background-image: url(images/blogbg.jpg);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-color: #f7f7f7;
+      z-index: 10000;
+      height:250%;
+    }
+
+    .blogbg{
+      display: none;
+    }
+
+  }
+
+
+   /* Large Phone */
+  @media only screen 
+    and (min-device-width: 374px) 
+    and (max-device-width: 631px) 
+    and (orientation: portrait) 
+    and (-webkit-min-device-pixel-ratio: 1) {
+        
+    /* Large Phone Dish */    
+    #dish {
+        width: 28%;
+        z-index: 1000;
+        order: 2;
+        overflow: visible;
+        background: none;
+        margin-top: -200px;
+        margin-left: -5px;
+    }
+    
+    /* Large Phone Dish 2 */   
+    #dish2 {
+        max-width: 40%;
+        z-index: 101000 !important;
+        background: none;
+        order: 3;
+        left: -10px;
+        top: 100px;
+        flex: 2 0 20em;
+        flex-basis: 0;
+    }
+
+    /* Large Phone Computer */   
+    #computer {
+        max-width: 64%;
+        background: none;
+        order: 4;
+        overflow: visible;
+        flex: 4 0 20em;
+        flex-basis: 0;
+        left: -25px;
+        top: -50px;
+    }  
+    
+    /* Large Phone Mini Teapot */   
+    #miniteapot {
+        max-width: 20%;
+        z-index: 1000;
+        background: none;
+        order: 5;
+        flex: 2 0 20em;
+        flex-basis: 0;
+        top: -6px;
+    }
+    
+    /* Large Phone Grain */
+    #grain {
+        max-width: 98%;
+        background: none;
+        top: -436px;
+        left: 158px;
+        flex-basis: 0;
+        order: 1;
+        z-index: 1000;
+    }
+    
+    /* Large Phone Coffee Cup */
+    #coffeecup {
+        max-width: 23%;
+        z-index: 1000;
+        background: none;
+        top: -1395px;
+        left: -10px;
+        flex: 2 0 20em;
+        flex-basis: 0;
+        order: 2;
+    }
+    
+    /* Large Phone Metal Clip */
+    #metalclip {
+        max-width: 20%;
+        background: none;
+        top: -195px;
+        left: -55px;
+        /* flex: 2 0 9em; */
+        flex-basis: 0;
+        order: 3;
+        z-index: 1000;
+    }
+
+    /* Large Phone Coffee */
+    #coffeecup {
+        max-width: 23%;
+        z-index: 1000;
+        background: none;
+        top: -146px;
+        left: -20px;
+        flex-basis: 0;
+        order: 2;
+    }
+    
+    /* Large Phone Small Vase */
+      #smallvase {
+        max-width: 28%;
+        background: none;
+        top: -300px !important;
+        left: 49px;
+        flex: 2 0 20em;
+        flex-basis: 0;
+        order: 4;
+        z-index: 1000;
+      }
+      
+      #smoothiedrink {
+      max-width: 30%;
+      background: none;
+      order: 1;
+      overflow: visible;
+      margin-left: -55px;
+      margin-top: -150px;
+      flex: 2 0 20em;
+      }
+
+}
+
+/* Medium Phone */
+
+  @media only screen 
+    and (min-device-width: 355px) 
+    and (max-device-width: 373px) 
+    and (orientation: portrait) 
+    and (-webkit-min-device-pixel-ratio: 1) {
+      /* Medium Phone Dish */
+      #dish {
+      width: 38%;
+      z-index: 1000;
+      order: 2;
+      overflow: visible;
+      background: none;
+      margin-top: -30px;
+      margin-left: -48px;
+      flex: 2 0 20em;
+      }
+      
+      /* Medium Phone Dish 2 */
+      #dish2 {
+        max-width: 40%;
+        z-index: 101000 !important;
+        background: none;
+        order: 3;
+        flex-basis: 0;
+        left: 0px;
+        margin-top: -35px;
+      }
+      
+      /* Medium Phone Computer */
+      #computer {
+        max-width: 64%;
+        background: none;
+        order: 4;
+        overflow: visible;
+        flex-basis: 0;
+        left: -6px;
+      }
+      
+       /* Medium Phone Grain*/
+      #grain {
+        max-width: 98%;
+        background: none;
+        top: -449px;
+        left: 171px;
+        flex-basis: 0;
+        order: 1;
+        z-index: 1000;
+      }
+      
+      /* Medium Phone Coffee Cup*/
+      #coffeecup {
+        max-width: 23%;
+        z-index: 1005;
+        background: none;
+        flex-basis: 0;
+        order: 2;
+        margin-top: -2725px;
+        left: 10px;
+      }
+    
+     /* Medium Phone Metal Clip*/
+      #metalclip {
+        max-width: 20%;
+        background: none;
+        top: -1383px;
+        left: -31px;
+        flex: 2 0 9em;
+        flex-basis: 0;
+        order: 3;
+        z-index: 1000;
+      }
+      
+      /* Medium Phone Small Vase*/
+      #smallvase {
+        max-width: 28%;
+        background: none;
+        top: -350px !important;
+        left: 49px;
+        flex: 2 0 20em;
+        flex-basis: 0;
+        order: 4;
+        z-index: 1000;
+      }
+      
+      /* Medium Phone Grain Two*/  
+      #graintwo {
+        max-width: 25%;
+        background: none;
+        top: -1270px;
+        left: -50px;
+        flex: 2 0 20em;
+        flex-basis: 0;
+        order: 1;
+        z-index: 1000;
+      }
+     
+     /* Medium Phone Journal*/   
+     #journal {
+        max-width: 35%;
+        background: none;
+        top: -300px;
+        left: 0px;
+        flex: 2 0 20em;
+        flex-basis: 0;
+        order: 1;
+        z-index: 1000;
+        overflow: visible;
+      }
+      
+      /* Medium Phone Gold Pen*/  
+      #goldpen {
+        max-width: 22%;
+        background: none;
+        top: -1254px;
+        left: 78px;
+        flex: 2 0 20em;
+        flex-basis: 0;
+        order: 1;
+        z-index: 1000;
+      }
+      
+     /* Medium Phone Grain Three*/  
+     #grainthree {
+        max-width: 81%;
+        background: none;
+        margin-top: -2450px;
+        left: 30px;
+        flex: 2 0 20em;
+        flex-basis: 0;
+        order: 2;
+        z-index: 1000;
+      }
+                  
+      /* Medium Phone Small Vase */
+      #smallvase {
+        max-width: 28%;
+        background: none;
+        top: -300px;
+        left: 46px;
+        flex: 2 0 20em;
+        order: 4;
+        z-index: 1000;
+      }
+
+      .blue {
+     /*  background-image: url(http://ericajhawkins.com/Udacity/images/background.jpg);*/
+      background-color: #f5f5f5;
+      position: relative;
+      background-repeat: no-repeat;
+      padding-top: 30px;
+      overflow-x: hidden;
+          margin-top: 25px;
+          display: none;
+      }
+
+      h1 {
+        font-family: 'Didonesque-BlackItalic' !important;
+        font-size: 38px !important;
+        text-align: center;
+      }
+      h2 {
+        font-size: 28px;
+      }
+      h3{
+        font-family: 'Didonesque-Roman';
+      }
+      
+      #hero h2 {
+        font-family: 'Didonesque-BlackItalic';
+        /* Font is not mathematically correct */
+        font-size: 28px;
+       }
+
+       #hero h1 {
+        font-family: 'Didonesque-Roman' !important;
+        font-size: 50px !important;
+        line-height: .9;
+      }
+
+      #hero {
+        position: absolute;
+        top: 420px;
+        left: 0px;
+        width: 100%;
+        text-align: center;
+      }
+
+      .socialmediabuttons {
+        display: inline-table;
+        margin-left: 0px;
+        width: 90%;
+      }
+      #firstcloud {
+        margin-top: -100px;
+      }
+      .bordeaux h1 {
+        margin-top: 400px;
+        margin-left: 30px;
+      }
+      .flowers {
+        width: 50%;
+      }
+      #inadaydream {
+        margin-top: 300px !important;
+        position: absolute;
+        right: 0px;
+        bottom: 0px !important;
+      }
+      .red {
+        background-image: url("images/fasihonportfoliobg.png");
+        background-size: contain;
+        background-color: #f5f5f5;
+        background-repeat: no-repeat;
+      }
+      .blogbg {
+        display: none;
+      }
+      .fashionbg {
+        display: none;
+      }
+      .row .item-2 {
+        position: relative;
+        margin: 2%;
+        overflow: hidden;
+        min-width: 344.8px;
+        text-align: center;
+      }
+      #stiletto {
+        position: absolute;
+        top: -150px !important;
+        left: 0px !important;
+      }
+      #thumbnail {
+        display: none;
+      }
+      #description {
+        display: none;
+      }
+      #close {
+        position: absolute;
+        right: -2%;
+        top: 2px;
+      }
+
+      #smoothiedrink {
+      max-width: 30%;
+      background: none;
+      order: 1;
+      overflow: visible;
+      margin-left: -37px;
+      margin-top: 40px;
+      flex: 2 0 20em;
+      }
+
+  }
+  
+  
+/* Small Phone */
+  @media only screen 
+    and (min-device-width: 319px) 
+    and (max-device-width: 355px) 
+    and (orientation: portrait) 
+    and (-webkit-min-device-pixel-ratio: 1) {
+    #main{
+      padding: 0px;
+    }
+        
+    /* Small Phone Teapot */
+    #miniteapot {
+      max-width: 20%;
+      z-index: 1000;
+      background: none;
+      order: 5;
+      flex: 2 0 20em;
+      flex-basis: 0;
+      top: 10px;
+      left: 10px;
+    }    
+        
+    /* Small Phone Dish */
+    #smoothiedrink {
+      max-width: 19%;
+      background: none;
+      order: 1;
+      overflow: visible;
+      margin-left: -48px;
+      margin-top: -150px;
+      flex: 2 0 20em;
+      flex-basis: 0;
+    }
+        
+     /* Small Phone Dish */
+    #dish {
+      width: 38%;
+      z-index: 1000;
+      order: 2;
+      overflow: visible;
+      background: none;
+      margin-top: -220px;
+      left: 79px;
+      flex: 2 0 20em;
+      background: none;
+    }
+
+      /* Small Phone Dish 2 */
+      #dish2 {
+        max-width: 40%;
+        z-index: 101000 !important;
+        background: none;
+        order: 3;
+        flex-basis: 0;
+        left: 59px;
+        top: 100px;
+      }
+      
+       /* Medium Phone Grain*/
+      #grain {
+        max-width: 98%;
+        background: none;
+        top: -449px;
+        left: 171px;
+        flex-basis: 0;
+        order: 1;
+        z-index: 1000;
+      }
+      
+      /* Small Phone Coffee Cup*/
+      #coffeecup {
+        max-width: 23%;
+        z-index: 1005;
+        background: none;
+        flex-basis: 0;
+        order: 2;
+        margin-top: -2725px;
+        left: 10px;
+      }
+    
+     /* Small Phone Metal Clip*/
+      #metalclip {
+        max-width: 20%;
+        background: none;
+        top: -189px;
+        left: -31px;
+        flex: 2 0 9em;
+        flex-basis: 0;
+        order: 3;
+        z-index: 1000;
+      }
+      
+      /* Small Phone Small Vase*/
+      #smallvase {
+        max-width: 28%;
+        background: none;
+        top: -300px !important;
+        left: 46px;
+        flex: 2 0 20em;
+        flex-basis: 0;
+        order: 4;
+        z-index: 1000;
+      }
+      
+      /* Small Phone Grain Two*/  
+      #graintwo {
+        max-width: 25%;
+        background: none;
+        top: -1270px;
+        left: -50px;
+        flex: 2 0 20em;
+        flex-basis: 0;
+        order: 1;
+        z-index: 1000;
+      }
+     
+     /* Small Phone Journal*/   
+     #journal {
+        max-width: 35%;
+        background: none;
+        top: -300px;
+        left: 0px;
+        flex: 2 0 20em;
+        flex-basis: 0;
+        order: 1;
+        z-index: 1000;
+        overflow: visible;
+      }
+      
+      /* Small Phone Gold Pen*/  
+      #goldpen {
+        max-width: 22%;
+        background: none;
+        top: -450px;
+        left: 155px;
+        flex: 2 0 20em;
+        flex-basis: 0;
+        order: 1;
+        z-index: 1000;
+      }
+      
+     /* Small Phone Grain Three*/  
+     #grainthree {
+        max-width: 81%;
+        background: none;
+        margin-top: -2450px;
+        left: 30px;
+        flex: 2 0 20em;
+        flex-basis: 0;
+        order: 2;
+        z-index: 1000;
+      }
+                  
+      /* Small Phone Computer */
+      #computer {
+        max-width: 46%;
+        background: none;
+        order: 4;
+        overflow: visible;
+        flex-basis: 0;
+        left: 11px;
+        top: -50px;
+      }
+
+      h1 {
+        font-family: 'Didonesque-BlackItalic' !important;
+        font-size: 38px !important;
+        text-align: center;
+      }
+      h2 {
+        font-size: 28px;
+      }
+      h3{
+        font-family: 'Didonesque-Roman';
+      }
+      
+      #hero h2 {
+        font-family: 'Didonesque-BlackItalic';
+        /* Font is not mathematically correct */
+        font-size: 28px;
+       }
+
+       #hero h1 {
+        font-family: 'Didonesque-Roman' !important;
+        font-size: 50px !important;
+        line-height: .9;
+      }
+
+      #hero {
+        position: absolute;
+        top: 200px;
+        left: 0px;
+        width: 100%;
+        text-align: center;
+      }
+
+      .socialmediabuttons {
+        display: inline-table;
+        margin-left: 0px;
+        width: 90%;
+      }
+      #firstcloud {
+        margin-top: -100px;
+      }
+      .bordeaux h1 {
+        margin-top: 400px;
+        margin-left: 30px;
+      }
+      .flowers {
+        width: 50%;
+      }
+      #inadaydream {
+        margin-top: 300px !important;
+        position: absolute;
+        right: 0px;
+        bottom: 0px !important;
+      }
+      .red {
+        background-image: url("images/fasihonportfoliobg.png");
+        background-size: contain;
+        background-color: #f5f5f5;
+        background-repeat: no-repeat;
+      }
+      .blogbg {
+        display: none;
+      }
+      .fashionbg {
+        display: none;
+      }
+      .row .item-2 {
+        position: relative;
+        margin: 2%;
+        overflow: hidden;
+        min-width: 344.8px;
+        text-align: center;
+      }
+      #stiletto {
+        position: absolute;
+        top: -150px !important;
+        left: 0px !important;
+      }
+      #thumbnail {
+        display: none;
+      }
+      #description {
+        display: none;
+      }
+      #close {
+        position: absolute;
+        right: -2%;
+        top: 2px;
+      }
+
+  }
+  
+  
