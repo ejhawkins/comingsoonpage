@@ -14,7 +14,9 @@ function App() {
 
   return (
     <div className="App" style={{ backgroundColor: isTan ? '#D7D4C9' : '#EF5DA8', color: isTan ? '#333' : '#fff' }}>
-      <header>
+      <main>
+
+   <header>
         <button id="toggleButtonmobile" style={{ marginBottom: '10%' }} onClick={toggleBackground}>
           {isTan ? 'Rosy Shades' : 'Down to Earth'}
         </button>
@@ -66,7 +68,6 @@ function App() {
         </nav>
       </header>
 
-      <main>
         <div className="profile">
           <div className="headline">
            {isTan ? <NameHeadlineVanilla /> : <NameHeadlineStrawberry />}
