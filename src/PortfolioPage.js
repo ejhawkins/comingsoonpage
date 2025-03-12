@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ReactComponent as nameHeadlinevanilla } from '../images/NameHeadline-ejh.svg';
+import { ReactComponent as nameHeadlinevanilla } from './images/NameHeadline-ejh.svg';
 
 
 function App() {
