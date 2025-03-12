@@ -66,7 +66,7 @@ function App() {
       <main>
         <div className="profile">
           <div className="headline">
-          <nameHeadlinevanilla />
+          <NameHeadlineVanilla />
             <img id="headlineImg" src={isTan ? {NameHeadlineVanilla} : 'images/NameHeadline-ejh-strawberry.svg'} width="100%" alt="Name Headline" />
           </div>
         </div>
