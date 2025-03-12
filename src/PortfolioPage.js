@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { ReactComponent as NameHeadlineVanilla } from './images/NameHeadline-ejh.svg';
-import { ReactComponent as NameHeadlineStrawberry } from './images/NameHeadlinePink-ejh.svg';
+import { ReactComponent as NameHeadlineStrawberry } from './images/NameHeadline-ejh-strawberry.svg';
 import { ReactComponent as BreakVanilla } from './images/break.svg';
 import { ReactComponent as BreakStrawberry } from './images/break-pink.svg';
 
