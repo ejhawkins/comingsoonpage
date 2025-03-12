@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { ReactComponent as NameHeadlineVanilla } from './images/NameHeadline-ejh.svg';
-import { ReactComponent as NameHeadlineStrawberry } from './images/NameHeadline-ejh.svg';
+import { ReactComponent as NameHeadlineStrawberry } from './images/NameHeadline-ejh-straweberry.svg';
+import { ReactComponent as BreakVanilla } from './images/break.svg';
+import { ReactComponent as BreakStrawberry } from './images/break-pink.svg';
 
 
 function App() {
@@ -67,7 +69,7 @@ function App() {
       <main>
         <div className="profile">
           <div className="headline">
-           {isTan ? <NameHeadlineVanilla /> : <NameHeadlineStrawberry />}
+           {isTan ? <NameHeadlineVanilla /> : <NameHeadlineStrawbery />}
           </div>
         </div>
         <div className="background-toggle">
@@ -79,7 +81,7 @@ function App() {
 
       <footer style={{ display: 'inline' }}>
         <div className="break" style={{ textAlign: 'left' }}>
-          <img id="breakImg" src={isTan ? 'images/break.svg' : 'images/break-pink.svg'} width="10%" alt="Break My Site Coming Soon" />
+            {isTan ? <BreakVanilla /> : <BreakStrawberry />} 
         </div>
         <ul style={{ justifyContent: 'space-around' }}>
           <a href="https://ericaandthemachine.com">
