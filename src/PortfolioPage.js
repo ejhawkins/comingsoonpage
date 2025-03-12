@@ -69,7 +69,7 @@ function App() {
       <main>
         <div className="profile">
           <div className="headline">
-           {isTan ? <NameHeadlineVanilla /> : <NameHeadlineStrawbery />}
+           {isTan ? <NameHeadlineVanilla /> : <NameHeadlineStrawberry />}
           </div>
         </div>
         <div className="background-toggle">
