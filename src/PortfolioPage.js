@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import nameHeadlinevanilla from 'images/NameHeadline-ejh.svg';
 
 
 function App() {
@@ -65,7 +66,7 @@ function App() {
       <main>
         <div className="profile">
           <div className="headline">
-            <img id="headlineImg" src={isTan ? 'images/NameHeadline-ejh.svg' : 'images/NameHeadline-ejh-strawberry.svg'} width="100%" alt="Name Headline" />
+            <img id="headlineImg" src={isTan ? {nameHeadlinevanilla} : 'images/NameHeadline-ejh-strawberry.svg'} width="100%" alt="Name Headline" />
           </div>
         </div>
         <div className="background-toggle">
