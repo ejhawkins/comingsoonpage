@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/static/css/main.0fb44569.css",
+    "main.js": "/static/js/main.f5f96169.js",
+    "static/js/787.26fd77dc.chunk.js": "/static/js/787.26fd77dc.chunk.js",
+    "static/media/detail-3.jpg": "/static/media/detail-3.696190e8ae343355c8f6.jpg",
+    "static/media/maplegroveoverlay.png": "/static/media/maplegroveoverlay.b6a49c76f7f83fbf725d.png",
+    "static/media/advantushpdetail2.png": "/static/media/advantushpdetail2.0fbca8f71c20dddee516.png",
+    "static/media/advantushpmainoverlay.png": "/static/media/advantushpmainoverlay.8d467a6c38a9c6b9f005.png",
+    "static/media/green-giant-product-locator-final.png": "/static/media/green-giant-product-locator-final.8a60280172a14898533b.png",
+    "static/media/Gradient Overlay Asset.png": "/static/media/Gradient Overlay Asset.dbb2f8ad6cd6efac81b8.png",
+    "static/media/green-giant-contact-form.png": "/static/media/green-giant-contact-form.970be8a7cd87bb772fc5.png",
+    "static/media/greengiant-hoveroverlay.png": "/static/media/greengiant-hoveroverlay.5c76c0e31f13d1553c8a.png",
+    "static/media/wide-view.png": "/static/media/wide-view.bed3102d757d22d9915a.png",
+    "static/media/detail-1.jpg": "/static/media/detail-1.61a82c4c1e48d9821043.jpg",
+    "static/media/advantushpwideview.png": "/static/media/advantushpwideview.46b6c425377c2acb12b7.png",
+    "static/media/advantushpdetail1.png": "/static/media/advantushpdetail1.3a63bb60db5677d3131d.png",
+    "static/media/maplegrovewideview.png": "/static/media/maplegrovewideview.0b7554ffcfe9c28dea8a.png",
+    "static/media/maplegrovedetail2.png": "/static/media/maplegrovedetail2.81c9ca0f81d769d5ceaf.png",
+    "static/media/maplegrovecontactus.png": "/static/media/maplegrovecontactus.cf315e4e9f48912a7fc8.png",
+    "static/media/maplegrovedetail1.png": "/static/media/maplegrovedetail1.26f0808df5ee75c3a739.png",
+    "static/media/box.png": "/static/media/box.b55c0520978b66931b6c.png",
+    "index.html": "/index.html",
+    "main.0fb44569.css.map": "/static/css/main.0fb44569.css.map",
+    "main.f5f96169.js.map": "/static/js/main.f5f96169.js.map",
+    "787.26fd77dc.chunk.js.map": "/static/js/787.26fd77dc.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0fb44569.css",
+    "static/js/main.f5f96169.js"
+  ]
+}
