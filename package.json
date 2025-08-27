@@ -1,7 +1,7 @@
 {
   "name": "comingsoonpage",
   "version": "1.0.0",
-  "homepage": "https://ejhawkins.github.io/comingsoonpage",
+  "homepage": "/",
   "private": true,
   "dependencies": {
     "@aws-amplify/ui-react": "^6.0.7",
