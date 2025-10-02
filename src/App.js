@@ -1,7 +1,9 @@
+
 import React, { useState, useEffect } from 'react';
 import './App.css';
 import PortfolioSelection from './PortfolioSelection.jsx';
 import PortfolioIndex from './PortfolioIndex.jsx';
+import FashionSelection from './FashionSelection.jsx';
 
 
 function App() {
@@ -61,6 +63,27 @@ function App() {
               <li>
                 <ul>
                   <button 
+                    onClick={() => setCurrentView('')}
+                    style={{ 
+                      background: 'none',
+                      border: 'none',
+                      padding: 0,
+                      cursor: 'pointer',
+                      textDecoration: 'none'
+                    }}
+                  >
+                    <li style={{ color: isTan ? '#333' : '#fff' }}>Fashion</li>
+                    <li>
+                      <p style={{ color: isTan ? '#333' : '#fff' }}>
+                        <span style={{ color: isTan ? '#333' : '#fff' }}>PROJECTS</span> AND MORE
+                      </p>
+                    </li>
+                  </button>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <button 
                     onClick={() => setCurrentView('portfolio')}
                     style={{ 
                       background: 'none',
@@ -72,7 +95,7 @@ function App() {
                   >
                     <li style={{ color: isTan ? '#333' : '#fff' }}>Work</li>
                     <li>
-                      <p className="fangirl" style={{ color: isTan ? '#333' : '#fff' }}>
+                      <p style={{ color: isTan ? '#333' : '#fff' }}>
                         <span style={{ color: isTan ? '#333' : '#fff' }}>Projects</span>Done
                       </p>
                     </li>
@@ -133,7 +156,7 @@ function App() {
             {isTan ? 'Rosy Shades' : 'Down to Earth'}
           </button>
         </div>
-        {currentView === 'home' ? <PortfolioIndex /> : <PortfolioSelection onBackToHome={() => setCurrentView('home')} />}
+        {currentView === 'home' ? <FashionSelection /> : <PortfolioSelection onBackToHome={() => setCurrentView('home')} />}
       </main>
     </div>
   );
