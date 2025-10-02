@@ -33,6 +33,7 @@ html, body {
     font-weight: 700;
     text-align: right;
     top: -5px !important;
+    letter-spacing: -4px;
 }
         /* Scroll Progress Bar */
 .scroll-progress-bar {
