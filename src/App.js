@@ -144,270 +144,275 @@ function App() {
               </li>
               <li>
                 <button 
-                  onClick={() => handleNavClick('visionboard')}
-                  style={{ 
-                    background: 'none',
-                    border: 'none',
-                    padding: 0,
-                    cursor: 'pointer',
-                    textDecoration: 'none',
-                    width: '100%',
-                    textAlign: 'left'
-                  }}
-                >
-                  <div style={{ color: isTan ? '#333' : '#fff' }}>Vision</div>
-                  <div>
-                    <p style={{ color: isTan ? '#333' : '#fff' }}>
-                      <span style={{ color: isTan ? '#333' : '#fff' }}>Inspiration</span>Board
-                    </p>
-                  </div>
-                </button>
-              </li>
-              <li>
-                <button 
-                  onClick={() => handleNavClick('moodboard')}
-                  style={{ 
-                    background: 'none',
-                    border: 'none',
-                    padding: 0,
-                    cursor: 'pointer',
-                    textDecoration: 'none',
-                    width: '100%',
-                    textAlign: 'left'
-                  }}
-                >
-                  <div style={{ color: isTan ? '#333' : '#fff' }}>Materials</div>
-                  <div>
-                    <p style={{ color: isTan ? '#333' : '#fff' }}>
-                      <span style={{ color: isTan ? '#333' : '#fff' }}>Inspiration</span>Board
-                    </p>
-                  </div>
-                </button>
-              </li>
-              {/* New Zines item inserted after Materials */}
-              <li>
+                  onClick={() => {}}
+                  aria-disabled="true"
+                  tabIndex={-1}
+                   style={{
+                     background: 'none',
+                     border: 'none',
+                     padding: 0,
+                     cursor: 'pointer',
+                     textDecoration: 'none',
+                     width: '100%',
+                     textAlign: 'left'
+                   }}
+                 >
+                   <div style={{ color: isTan ? '#333' : '#fff' }}>Vision</div>
+                   <div>
+                     <p style={{ color: isTan ? '#333' : '#fff' }}>
+                       <span style={{ color: isTan ? '#333' : '#fff' }}>Inspiration</span>Board
+                     </p>
+                   </div>
+                 </button>
+               </li>
+               <li>
+                 <button
+                  onClick={() => {}}
+                  aria-disabled="true"
+                  tabIndex={-1}
+                   style={{
+                     background: 'none',
+                     border: 'none',
+                     padding: 0,
+                     cursor: 'pointer',
+                     textDecoration: 'none',
+                     width: '100%',
+                     textAlign: 'left'
+                   }}
+                 >
+                   <div style={{ color: isTan ? '#333' : '#fff' }}>Materials</div>
+                   <div>
+                     <p style={{ color: isTan ? '#333' : '#fff' }}>
+                       <span style={{ color: isTan ? '#333' : '#fff' }}>Inspiration</span>Board
+                     </p>
+                   </div>
+                 </button>
+               </li>
+               {/* New Zines item inserted after Materials */}
+               <li>
                 <button
-                  onClick={() => handleNavClick('portfolio')}
-                  style={{
-                    background: 'none',
-                    border: 'none',
-                    padding: 0,
-                    cursor: 'pointer',
-                    textDecoration: 'none',
-                    width: '100%',
-                    textAlign: 'left'
-                  }}
-                >
-                  <div style={{ color: isTan ? '#333' : '#fff' }}>Zines</div>
-                  <div>
-                    <p style={{ color: isTan ? '#333' : '#fff' }}>
-                      <span style={{ color: isTan ? '#333' : '#fff' }}>Editorial</span>Showcase
-                    </p>
-                  </div>
-                </button>
-              </li>
-                <li>
+                  onClick={() => {}}
+                  aria-disabled="true"
+                  tabIndex={-1}
+                   style={{
+                     background: 'none',
+                     border: 'none',
+                     padding: 0,
+                     cursor: 'pointer',
+                     textDecoration: 'none',
+                     width: '100%',
+                     textAlign: 'left'
+                   }}
+                 >
+                   <div style={{ color: isTan ? '#333' : '#fff' }}>Zines</div>
+                   <div>
+                     <p style={{ color: isTan ? '#333' : '#fff' }}>
+                       <span style={{ color: isTan ? '#333' : '#fff' }}>Editorial</span>Showcase
+                     </p>
+                   </div>
+                 </button>
+               </li>
+                 <li>
                     <button
-                        onClick={() => setCurrentView('')}
-                        style={{
-                            background: 'none',
-                            border: 'none',
-                            padding: 0,
-                            cursor: 'pointer',
-                            textDecoration: 'none',
-                            width: '100%',
-                            textAlign: 'left'
-                        }}
-                    >
-                        <div style={{ color: isTan ? '#333' : '#fff' }}>CatwalkFM</div>
-                        <div>
-                            <p style={{ color: isTan ? '#333' : '#fff' }}>
-                                <span style={{ color: isTan ? '#333' : '#fff' }}>PROJECTS</span> AND MORE
-                            </p>
-                        </div>
-                    </button>
-                </li>
-                <li>
+                        onClick={() => {}}
+                        aria-disabled="true"
+                        tabIndex={-1}
+                         style={{
+                             background: 'none',
+                             border: 'none',
+                             padding: 0,
+                             cursor: 'pointer',
+                             textDecoration: 'none',
+                             width: '100%',
+                             textAlign: 'left'
+                         }}
+                     >
+                         <div style={{ color: isTan ? '#333' : '#fff' }}>CatwalkFM</div>
+                         <div>
+                             <p style={{ color: isTan ? '#333' : '#fff' }}>
+                                 <span style={{ color: isTan ? '#333' : '#fff' }}>PROJECTS</span> AND MORE
+                             </p>
+                         </div>
+                     </button>
+                 </li>
+                 <li>
                     <button
-                        onClick={() => setCurrentView('')}
-                        style={{
-                            background: 'none',
-                            border: 'none',
-                            padding: 0,
-                            cursor: 'pointer',
-                            textDecoration: 'none',
-                            width: '100%',
-                            textAlign: 'left'
-                        }}
-                    >
-                        <div style={{ color: isTan ? '#333' : '#fff' }}>Sketchbook</div>
-                        <div>
-                            <p style={{ color: isTan ? '#333' : '#fff' }}>
-                                <span style={{ color: isTan ? '#333' : '#fff' }}>PROJECTS</span> AND MORE
-                            </p>
-                        </div>
-                    </button>
-                </li>
-              {/* contact nav item removed */}
-              <li>
+                        onClick={() => {}}
+                        aria-disabled="true"
+                        tabIndex={-1}
+                         style={{
+                             background: 'none',
+                             border: 'none',
+                             padding: 0,
+                             cursor: 'pointer',
+                             textDecoration: 'none',
+                             width: '100%',
+                             textAlign: 'left'
+                         }}
+                     >
+                         <div style={{ color: isTan ? '#333' : '#fff' }}>Sketchbook</div>
+                         <div>
+                             <p style={{ color: isTan ? '#333' : '#fff' }}>
+                                 <span style={{ color: isTan ? '#333' : '#fff' }}>PROJECTS</span> AND MORE
+                             </p>
+                         </div>
+                     </button>
+                 </li>
+               {/* contact nav item removed */}
+               </ul>
+           </nav>
+
+           <nav className="main-menu-mobile">
+             <ul>
+               <li>
                 <button
-                  onClick={() => handleNavClick('')}
-                  style={{
-                    background: 'none',
-                    border: 'none',
-                    padding: 0,
-                    cursor: 'pointer',
-                    textDecoration: 'none',
-                    width: '100%',
-                    textAlign: 'left'
-                  }}
-                >
-                  <div style={{ color: isTan ? '#333' : '#fff' }}>Digital Sketchbook</div>
-                  <div>
-                    <p style={{ color: isTan ? '#333' : '#fff' }}>
-                      <span style={{ color: isTan ? '#333' : '#fff' }}>PROJECTS</span> AND MORE
-                    </p>
-                  </div>
-                </button>
-              </li>
-            </ul>
-          </nav>
-          
-          <nav className="main-menu-mobile">
-            <ul>
-              <li>
-                <button 
-                  onClick={() => setCurrentView('visionboard')}
-                  style={{ 
-                    background: 'none',
-                    border: 'none',
-                    padding: 0,
-                    cursor: 'pointer',
-                    textDecoration: 'none',
-                    width: '100%',
-                    textAlign: 'left',
-                    color: isTan ? '#333' : '#fff'
-                  }}
-                >
-                  Vision
-                </button>
-              </li>
-              <li>
-                <button 
-                  onClick={() => setCurrentView('moodboard')}
-                  style={{ 
-                    background: 'none',
-                    border: 'none',
-                    padding: 0,
-                    cursor: 'pointer',
-                    textDecoration: 'none',
-                    width: '100%',
-                    textAlign: 'left',
-                    color: isTan ? '#333' : '#fff'
-                  }}
-                >
-                  Materials
-                </button>
-              </li>
-              <li>
-                <div style={{ color: isTan ? '#333' : '#fff' }}>Zines</div>
-              </li>
-              <li>
+                  onClick={() => {}}
+                  aria-disabled="true"
+                  tabIndex={-1}
+                   style={{
+                     background: 'none',
+                     border: 'none',
+                     padding: 0,
+                     cursor: 'pointer',
+                     textDecoration: 'none',
+                     width: '100%',
+                     textAlign: 'left',
+                     color: isTan ? '#333' : '#fff'
+                   }}
+                 >
+                   Vision
+                 </button>
+               </li>
+               <li>
                 <button
-                  onClick={() => setCurrentView('moodboard')}
-                  style={{
-                    background: 'none',
-                    border: 'none',
-                    padding: 0,
-                    cursor: 'pointer',
-                    textDecoration: 'none',
-                    width: '100%',
-                    textAlign: 'left',
-                    color: isTan ? '#333' : '#fff'
-                  }}
-                >
-                  CatwalkFM
-                </button>
-              </li>
-              <li>
+                  onClick={() => {}}
+                  aria-disabled="true"
+                  tabIndex={-1}
+                   style={{
+                     background: 'none',
+                     border: 'none',
+                     padding: 0,
+                     cursor: 'pointer',
+                     textDecoration: 'none',
+                     width: '100%',
+                     textAlign: 'left',
+                     color: isTan ? '#333' : '#fff'
+                   }}
+                 >
+                   Materials
+                 </button>
+               </li>
+               <li>
+                 <div style={{ color: isTan ? '#333' : '#fff' }}>Zines</div>
+               </li>
+               <li>
                 <button
-                  onClick={() => setCurrentView('moodboard')}
+                  onClick={() => {}}
+                  aria-disabled="true"
+                  tabIndex={-1}
+                   style={{
+                     background: 'none',
+                     border: 'none',
+                     padding: 0,
+                     cursor: 'pointer',
+                     textDecoration: 'none',
+                     width: '100%',
+                     textAlign: 'left',
+                     color: isTan ? '#333' : '#fff'
+                   }}
+                 >
+                   CatwalkFM
+                 </button>
+               </li>
+               <li>
+                <button
+                  onClick={() => {}}
+                  aria-disabled="true"
+                  tabIndex={-1}
+                   style={{
+                     background: 'none',
+                     border: 'none',
+                     padding: 0,
+                     cursor: 'pointer',
+                     textDecoration: 'none',
+                     width: '100%',
+                     textAlign: 'left',
+                     color: isTan ? '#333' : '#fff'
+                   }}
+                 >
+                   Sketchbook
+                 </button>
+               </li>
+               <li>
+                <button
+                  onClick={() => {}}
+                  aria-disabled="true"
+                  tabIndex={-1}
                   style={{
                     background: 'none',
                     border: 'none',
                     padding: 0,
-                    cursor: 'pointer',
+                    cursor: 'default',
                     textDecoration: 'none',
                     width: '100%',
                     textAlign: 'left',
-                    color: isTan ? '#333' : '#fff'
-                  }}
-                >
-                  Sketchbook
-                </button>
-              </li>
-              <li>
-                <a 
-                  href="mailto:erica.janel.hawkins@outlook.com"
-                  style={{
-                    textDecoration: 'none',
                     color: isTan ? '#333' : '#fff',
                     display: 'block'
                   }}
                 >
                   Contact
-                </a>
-              </li>
-              <li>
-                <button
-                  onClick={() => setCurrentView('portfolio')}
-                  style={{
-                    background: 'none',
-                    border: 'none',
-                    padding: 0,
-                    cursor: 'pointer',
-                    textDecoration: 'none',
-                    width: '100%',
-                    textAlign: 'left',
-                    color: isTan ? '#333' : '#fff'
-                  }}
-                >
-                  Projects
                 </button>
-              </li>
-            </ul>
-          </nav>
+               </li>
+               <li>
+                 <button
+                   onClick={() => setCurrentView('portfolio')}
+                   style={{
+                     background: 'none',
+                     border: 'none',
+                     padding: 0,
+                     cursor: 'pointer',
+                     textDecoration: 'none',
+                     width: '100%',
+                     textAlign: 'left',
+                     color: isTan ? '#333' : '#fff'
+                   }}
+                 >
+                   Projects
+                 </button>
+               </li>
+             </ul>
+           </nav>
 
-          {/* Mobile Navigation Overlay */}
-          <div 
-            className={`mobile-nav-overlay ${isMobileMenuOpen ? 'open' : ''}`}
-            onClick={(e) => {
-              // Close menu when clicking outside the nav menu
-              if (e.target.classList.contains('mobile-nav-overlay')) {
-                setIsMobileMenuOpen(false);
-              }
-            }}
-          >
-            <div className="mobile-nav-menu">
-              <button onClick={() => handleNavClick('fashion')}>
+           {/* Mobile Navigation Overlay */}
+           <div
+             className={`mobile-nav-overlay ${isMobileMenuOpen ? 'open' : ''}`}
+             onClick={(e) => {
+               // Close menu when clicking outside the nav menu
+               if (e.target.classList.contains('mobile-nav-overlay')) {
+                 setIsMobileMenuOpen(false);
+               }
+             }}
+           >
+             <div className="mobile-nav-menu">
+              <button onClick={() => handleNavClick('')}>
                 Fashion
               </button>
-              <button onClick={() => handleNavClick('portfolio')}>
+              <button onClick={() => {}} aria-disabled="true" tabIndex={-1} style={{ cursor: 'default' }}>
                 Work
               </button>
-              <button onClick={() => handleNavClick('visionboard')}>
-                Vision Board
-              </button>
-              <button onClick={() => handleNavClick('moodboard')}>
-                Materials
-              </button>
-              <button onClick={() => handleNavClick('portfolio')}>
-                Zines
-              </button>
-            </div>
-          </div>
-        </div>
-      </header>
+               <button onClick={() => {}} aria-disabled="true" tabIndex={-1}>
+                 Vision Board
+               </button>
+               <button onClick={() => {}} aria-disabled="true" tabIndex={-1}>
+                 Materials
+               </button>
+               <button onClick={() => {}} aria-disabled="true" tabIndex={-1}>
+                 Zines
+               </button>
+             </div>
+           </div>
+         </div>
+       </header>
 
       <main>
         <div className="background-toggle">
