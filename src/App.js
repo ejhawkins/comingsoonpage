@@ -114,27 +114,6 @@ function App() {
                     </button>
                 </li>
               <li>
-                <button 
-                  onClick={() => handleNavClick('')}
-                  style={{ 
-                    background: 'none',
-                    border: 'none',
-                    padding: 0,
-                    cursor: 'pointer',
-                    textDecoration: 'none',
-                    width: '100%',
-                    textAlign: 'left'
-                  }}
-                >
-                  <div style={{ color: isTan ? '#333' : '#fff' }}>Work</div>
-                  <div>
-                    <p style={{ color: isTan ? '#333' : '#fff' }}>
-                      <span style={{ color: isTan ? '#333' : '#fff' }}>PROJECTS</span> AND MORE
-                    </p>
-                  </div>
-                </button>
-              </li>
-              <li>
                 <button
                   onClick={() => handleNavClick('portfolio')}
                   style={{
