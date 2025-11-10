@@ -29,7 +29,7 @@ html, body {
     align-items: center;
     color: #333;
     font-size: 36px;
-    font-family: "Cabin", sans-serif;
+    font-family: 'Aeonik Pro', sans-serif;
     font-weight: 700;
     text-align: right;
     top: -5px !important;
@@ -78,7 +78,6 @@ html, body {
   justify-content: space-between;
   align-items: center;
   padding: 15px 30px;
-  max-width: 1400px;
   margin: 0 auto;
   gap: 20px;
 }
@@ -125,7 +124,7 @@ html, body {
             padding: 10px 20px;
             font-size: 16px;
             cursor: pointer;
-            font-family: "Cabin", sans-serif;
+            font-family: 'Aeonik Pro', sans-serif;
             background-color: transparent;
             border: 1px solid #333;
             position: absolute;
@@ -155,7 +154,7 @@ html, body {
             align-items: center;
             color: #333;
             font-size: 36px;
-            font-family: "Cabin", sans-serif;
+            font-family: 'Aeonik Pro', sans-serif;
             font-weight: 700;
             text-align: right;
         }
@@ -224,7 +223,7 @@ html, body {
             position: absolute;
             bottom: 0;
             width: 100%;
-            font-family: "Cabin", sans-serif;
+            font-family: 'Aeonik Pro', sans-serif;
         }
         footer ul {
             display: flex;
@@ -605,14 +604,14 @@ stroke-dashoffset: 0;
         
         .masonry-item h3 {
             margin: 0 0 10px 0;
-            font-family: "Cabin", sans-serif;
+            font-family: 'Aeonik Pro', sans-serif;
             font-size: 1.2rem;
             font-weight: bold;
         }
         
         .masonry-item p {
             margin: 0;
-            font-family: "Cabin", sans-serif;
+            font-family: 'Aeonik Pro', sans-serif;
             font-size: 0.9rem;
             line-height: 1.4;
             opacity: 0.8;

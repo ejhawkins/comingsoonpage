@@ -1,0 +1,43 @@
+/* Aeonik Pro Trial Font Faces */
+
+@font-face {
+    font-family: 'Aeonik Pro';
+    src: url('../fonts/AeonikProTRIAL-Light.otf') format('opentype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Aeonik Pro';
+    src: url('../fonts/AeonikProTRIAL-LightItalic.otf') format('opentype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Aeonik Pro';
+    src: url('../fonts/AeonikProTRIAL-Regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Aeonik Pro';
+    src: url('../fonts/AeonikProTRIAL-RegularItalic.otf') format('opentype');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Aeonik Pro';
+    src: url('../fonts/AeonikProTRIAL-Bold.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Aeonik Pro';
+    src: url('../fonts/AeonikProTRIAL-BoldItalic.otf') format('opentype');
+    font-weight: 700;
+    font-style: italic;
+}
