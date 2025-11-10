@@ -184,6 +184,28 @@ function App() {
                   </div>
                 </button>
               </li>
+              {/* New Zines item inserted after Materials */}
+              <li>
+                <button
+                  onClick={() => handleNavClick('portfolio')}
+                  style={{
+                    background: 'none',
+                    border: 'none',
+                    padding: 0,
+                    cursor: 'pointer',
+                    textDecoration: 'none',
+                    width: '100%',
+                    textAlign: 'left'
+                  }}
+                >
+                  <div style={{ color: isTan ? '#333' : '#fff' }}>Zines</div>
+                  <div>
+                    <p style={{ color: isTan ? '#333' : '#fff' }}>
+                      <span style={{ color: isTan ? '#333' : '#fff' }}>Editorial</span>Showcase
+                    </p>
+                  </div>
+                </button>
+              </li>
                 <li>
                     <button
                         onClick={() => setCurrentView('')}
