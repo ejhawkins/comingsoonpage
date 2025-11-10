@@ -213,28 +213,7 @@ function App() {
                         </div>
                     </button>
                 </li>
-              <li>
-                <ul className="contact">
-                  <li>
-                    <a
-                      href="mailto:ericajhawkins@gmail.com"
-                      style={{
-                        color: isTan ? '#333' : '#fff',
-                        textDecoration: 'none',
-                        display: 'inline-flex',
-                        flexDirection: 'column',
-                        alignItems: 'flex-start',
-                        gap: '4px'
-                      }}
-                    >
-                      <div style={{ fontWeight: 700 }}>Contact</div>
-                      <p style={{ margin: 0, fontWeight: 400 }}>
-                        <span>Reach Out</span> To Me!
-                      </p>
-                    </a>
-                  </li>
-                </ul>
-              </li>
+              {/* contact nav item removed */}
             </ul>
           </nav>
           

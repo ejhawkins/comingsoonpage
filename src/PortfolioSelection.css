@@ -1525,9 +1525,9 @@ body.project-page-active {
 
 /* Mobile Styles - Under 540px */
 @media (max-width: 539px) {
-  /* Hide main menu ul on mobile */
-  .main-menu ul {
-    display: none;
+  /* Hide main menu on mobile - use the main-menu class directly */
+  .main-menu {
+    display: none !important;
   }
   
   .project-nav {
