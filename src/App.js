@@ -4,7 +4,7 @@ import PortfolioSelection from './PortfolioSelection.jsx';
 import FashionSelection from './FashionSelection.jsx';
 import VisionBoard from './VisionBoard.jsx';
 import Moodboard from './Moodboard.jsx';
-import logoPlaceholder from './images/logo-placeholder.svg';
+import logoPlaceholder from './images/ericahawkins_logo.png';
 
 
 function App() {
@@ -249,6 +249,27 @@ function App() {
                     </button>
                 </li>
               {/* contact nav item removed */}
+              <li>
+                <button
+                  onClick={() => handleNavClick('')}
+                  style={{
+                    background: 'none',
+                    border: 'none',
+                    padding: 0,
+                    cursor: 'pointer',
+                    textDecoration: 'none',
+                    width: '100%',
+                    textAlign: 'left'
+                  }}
+                >
+                  <div style={{ color: isTan ? '#333' : '#fff' }}>Digital Sketchbook</div>
+                  <div>
+                    <p style={{ color: isTan ? '#333' : '#fff' }}>
+                      <span style={{ color: isTan ? '#333' : '#fff' }}>PROJECTS</span> AND MORE
+                    </p>
+                  </div>
+                </button>
+              </li>
             </ul>
           </nav>
           
