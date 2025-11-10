@@ -4,6 +4,7 @@ import PortfolioSelection from './PortfolioSelection.jsx';
 import FashionSelection from './FashionSelection.jsx';
 import VisionBoard from './VisionBoard.jsx';
 import Moodboard from './Moodboard.jsx';
+import logoPlaceholder from './images/logo-placeholder.svg';
 
 
 function App() {
@@ -57,6 +58,10 @@ function App() {
           : 'transparent'
       }}>
         <div className="header-content">
+          {/* Logo placeholder on the left */}
+          <div className="logo-wrapper" style={{ display: 'flex', alignItems: 'center', padding: '12px 20px' }}>
+            <img src={logoPlaceholder} alt="Logo" style={{ height: 36, width: 'auto' }} />
+          </div>
           <button id="toggleButtonmobile" onClick={toggleBackground} style={{
             color: isTan ? '#333' : '#fff',
             border: `1px solid ${isTan ? '#333' : '#fff'}`

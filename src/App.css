@@ -245,6 +245,25 @@ html, body {
     justify-content: stretch;
 }
 
+/* Logo wrapper styles */
+.logo-wrapper {
+  display: flex;
+  align-items: center;
+  margin-right: 12px;
+}
+
+.logo-wrapper img {
+  display: block;
+  height: 36px;
+  width: auto;
+}
+
+@media (max-width: 768px) {
+  .logo-wrapper {
+    display: none; /* hide logo on small screens to save space */
+  }
+}
+
 .main-header, .main-menu, .main-menu ul {
     width: 100%;
     max-width: 100vw;
