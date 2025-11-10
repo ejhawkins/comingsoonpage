@@ -92,6 +92,27 @@ function App() {
           
           <nav className={`main-menu ${isMobileMenuOpen ? 'mobile-open' : ''}`}>
             <ul>
+                <li>
+                    <button
+                        onClick={() => handleNavClick('')}
+                        style={{
+                            background: 'none',
+                            border: 'none',
+                            padding: 0,
+                            cursor: 'pointer',
+                            textDecoration: 'none',
+                            width: '100%',
+                            textAlign: 'left'
+                        }}
+                    >
+                        <div style={{ color: isTan ? '#333' : '#fff' }}>Fashion</div>
+                        <div>
+                            <p style={{ color: isTan ? '#333' : '#fff' }}>
+                                <span style={{ color: isTan ? '#333' : '#fff' }}>PROJECTS</span> AND MORE
+                            </p>
+                        </div>
+                    </button>
+                </li>
               <li>
                 <button 
                   onClick={() => handleNavClick('')}
@@ -105,7 +126,7 @@ function App() {
                     textAlign: 'left'
                   }}
                 >
-                  <div style={{ color: isTan ? '#333' : '#fff' }}>Fashion</div>
+                  <div style={{ color: isTan ? '#333' : '#fff' }}>Work</div>
                   <div>
                     <p style={{ color: isTan ? '#333' : '#fff' }}>
                       <span style={{ color: isTan ? '#333' : '#fff' }}>PROJECTS</span> AND MORE
@@ -172,6 +193,27 @@ function App() {
                   <div>
                     <p style={{ color: isTan ? '#333' : '#fff' }}>
                       <span style={{ color: isTan ? '#333' : '#fff' }}>Inspiration</span>Board
+                    </p>
+                  </div>
+                </button>
+              </li>
+              <li>
+                <button
+                  onClick={() => handleNavClick('portfolio')}
+                  style={{
+                    background: 'none',
+                    border: 'none',
+                    padding: 0,
+                    cursor: 'pointer',
+                    textDecoration: 'none',
+                    width: '100%',
+                    textAlign: 'left'
+                  }}
+                >
+                  <div style={{ color: isTan ? '#333' : '#fff' }}>Projects</div>
+                  <div>
+                    <p style={{ color: isTan ? '#333' : '#fff' }}>
+                      <span style={{ color: isTan ? '#333' : '#fff' }}>Selected</span> Works
                     </p>
                   </div>
                 </button>
@@ -306,6 +348,23 @@ function App() {
                 >
                   Contact
                 </a>
+              </li>
+              <li>
+                <button
+                  onClick={() => setCurrentView('portfolio')}
+                  style={{
+                    background: 'none',
+                    border: 'none',
+                    padding: 0,
+                    cursor: 'pointer',
+                    textDecoration: 'none',
+                    width: '100%',
+                    textAlign: 'left',
+                    color: isTan ? '#333' : '#fff'
+                  }}
+                >
+                  Projects
+                </button>
               </li>
             </ul>
           </nav>
