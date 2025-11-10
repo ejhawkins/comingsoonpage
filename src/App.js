@@ -1,9 +1,9 @@
-
 import React, { useState, useEffect } from 'react';
 import './App.css';
 import PortfolioSelection from './PortfolioSelection.jsx';
-import PortfolioIndex from './PortfolioIndex.jsx';
 import FashionSelection from './FashionSelection.jsx';
+import VisionBoard from './VisionBoard.jsx';
+import Moodboard from './Moodboard.jsx';
 
 
 function App() {
@@ -11,9 +11,15 @@ function App() {
   const [scrollProgress, setScrollProgress] = useState(0);
   const [isScrolled, setIsScrolled] = useState(false);
   const [currentView, setCurrentView] = useState('home'); // 'home' or 'portfolio'
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const toggleBackground = () => {
     setIsTan(!isTan);
+  };
+
+  const handleNavClick = (view) => {
+    setCurrentView(view);
+    setIsMobileMenuOpen(false); // Close mobile menu when navigating
   };
 
   // Handle scroll progress and sticky header
@@ -58,72 +64,175 @@ function App() {
             {isTan ? 'Rosy Shades' : 'Down to Earth'}
           </button>
           
-          <nav className="main-menu">
+          {/* Mobile Hamburger Menu */}
+          <button 
+            className="mobile-menu-toggle"
+            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            style={{
+              color: isTan ? '#333' : '#fff',
+              background: 'none',
+              border: 'none',
+              fontSize: '24px',
+              cursor: 'pointer',
+              padding: '10px',
+              display: 'none' // Will show on mobile via CSS
+            }}
+          >
+            <span className={`hamburger ${isMobileMenuOpen ? 'active' : ''}`}>
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
+          </button>
+          
+          <nav className={`main-menu ${isMobileMenuOpen ? 'mobile-open' : ''}`}>
             <ul>
               <li>
-                <ul>
-                  <button 
-                    onClick={() => setCurrentView('')}
-                    style={{ 
-                      background: 'none',
-                      border: 'none',
-                      padding: 0,
-                      cursor: 'pointer',
-                      textDecoration: 'none'
-                    }}
-                  >
-                    <li style={{ color: isTan ? '#333' : '#fff' }}>Fashion</li>
-                    <li>
-                      <p style={{ color: isTan ? '#333' : '#fff' }}>
-                        <span style={{ color: isTan ? '#333' : '#fff' }}>PROJECTS</span> AND MORE
-                      </p>
-                    </li>
-                  </button>
-                </ul>
+                <button 
+                  onClick={() => handleNavClick('')}
+                  style={{ 
+                    background: 'none',
+                    border: 'none',
+                    padding: 0,
+                    cursor: 'pointer',
+                    textDecoration: 'none',
+                    width: '100%',
+                    textAlign: 'left'
+                  }}
+                >
+                  <div style={{ color: isTan ? '#333' : '#fff' }}>Fashion</div>
+                  <div>
+                    <p style={{ color: isTan ? '#333' : '#fff' }}>
+                      <span style={{ color: isTan ? '#333' : '#fff' }}>PROJECTS</span> AND MORE
+                    </p>
+                  </div>
+                </button>
               </li>
               <li>
-                <ul>
-                  <button 
-                    onClick={() => setCurrentView('portfolio')}
-                    style={{ 
-                      background: 'none',
-                      border: 'none',
-                      padding: 0,
-                      cursor: 'pointer',
-                      textDecoration: 'none'
-                    }}
-                  >
-                    <li style={{ color: isTan ? '#333' : '#fff' }}>Work</li>
-                    <li>
-                      <p style={{ color: isTan ? '#333' : '#fff' }}>
-                        <span style={{ color: isTan ? '#333' : '#fff' }}>Projects</span>Done
-                      </p>
-                    </li>
-                  </button>
-                </ul>
+                <button
+                  onClick={() => handleNavClick('portfolio')}
+                  style={{
+                    background: 'none',
+                    border: 'none',
+                    padding: 0,
+                    cursor: 'pointer',
+                    textDecoration: 'none',
+                    width: '100%',
+                    textAlign: 'left'
+                  }}
+                >
+                  <div style={{ color: isTan ? '#333' : '#fff' }}>Zines</div>
+                  <div>
+                    <p style={{ color: isTan ? '#333' : '#fff' }}>
+                      <span style={{ color: isTan ? '#333' : '#fff' }}>Editorial</span>Showcase
+                    </p>
+                  </div>
+                </button>
               </li>
               <li>
-                <ul>
-                  <a href="https://www.28thblvd.com">
-                    <li style={{ color: isTan ? '#333' : '#fff' }}>Zine</li>
-                    <li>
-                      <p className="fangirl" style={{ color: isTan ? '#333' : '#fff' }}>
-                        <span style={{ color: isTan ? '#333' : '#fff' }}>Fan</span>girl
-                      </p>
-                    </li>
-                  </a>
-                </ul>
+                <button 
+                  onClick={() => handleNavClick('visionboard')}
+                  style={{ 
+                    background: 'none',
+                    border: 'none',
+                    padding: 0,
+                    cursor: 'pointer',
+                    textDecoration: 'none',
+                    width: '100%',
+                    textAlign: 'left'
+                  }}
+                >
+                  <div style={{ color: isTan ? '#333' : '#fff' }}>Vision</div>
+                  <div>
+                    <p style={{ color: isTan ? '#333' : '#fff' }}>
+                      <span style={{ color: isTan ? '#333' : '#fff' }}>Inspiration</span>Board
+                    </p>
+                  </div>
+                </button>
               </li>
+              <li>
+                <button 
+                  onClick={() => handleNavClick('moodboard')}
+                  style={{ 
+                    background: 'none',
+                    border: 'none',
+                    padding: 0,
+                    cursor: 'pointer',
+                    textDecoration: 'none',
+                    width: '100%',
+                    textAlign: 'left'
+                  }}
+                >
+                  <div style={{ color: isTan ? '#333' : '#fff' }}>Materials</div>
+                  <div>
+                    <p style={{ color: isTan ? '#333' : '#fff' }}>
+                      <span style={{ color: isTan ? '#333' : '#fff' }}>Inspiration</span>Board
+                    </p>
+                  </div>
+                </button>
+              </li>
+                <li>
+                    <button
+                        onClick={() => setCurrentView('')}
+                        style={{
+                            background: 'none',
+                            border: 'none',
+                            padding: 0,
+                            cursor: 'pointer',
+                            textDecoration: 'none',
+                            width: '100%',
+                            textAlign: 'left'
+                        }}
+                    >
+                        <div style={{ color: isTan ? '#333' : '#fff' }}>CatwalkFM</div>
+                        <div>
+                            <p style={{ color: isTan ? '#333' : '#fff' }}>
+                                <span style={{ color: isTan ? '#333' : '#fff' }}>PROJECTS</span> AND MORE
+                            </p>
+                        </div>
+                    </button>
+                </li>
+                <li>
+                    <button
+                        onClick={() => setCurrentView('')}
+                        style={{
+                            background: 'none',
+                            border: 'none',
+                            padding: 0,
+                            cursor: 'pointer',
+                            textDecoration: 'none',
+                            width: '100%',
+                            textAlign: 'left'
+                        }}
+                    >
+                        <div style={{ color: isTan ? '#333' : '#fff' }}>Sketchbook</div>
+                        <div>
+                            <p style={{ color: isTan ? '#333' : '#fff' }}>
+                                <span style={{ color: isTan ? '#333' : '#fff' }}>PROJECTS</span> AND MORE
+                            </p>
+                        </div>
+                    </button>
+                </li>
               <li>
                 <ul className="contact">
-                  <a href="mailto:ericajhawkins@gmail.com">
-                    <li style={{ color: isTan ? '#333' : '#fff' }}>Contact</li>
-                    <li>
-                      <p style={{ color: isTan ? '#333' : '#fff' }}>
-                        <span style={{ color: isTan ? '#333' : '#fff' }}>Reach Out</span> To Me!
+                  <li>
+                    <a
+                      href="mailto:ericajhawkins@gmail.com"
+                      style={{
+                        color: isTan ? '#333' : '#fff',
+                        textDecoration: 'none',
+                        display: 'inline-flex',
+                        flexDirection: 'column',
+                        alignItems: 'flex-start',
+                        gap: '4px'
+                      }}
+                    >
+                      <div style={{ fontWeight: 700 }}>Contact</div>
+                      <p style={{ margin: 0, fontWeight: 400 }}>
+                        <span>Reach Out</span> To Me!
                       </p>
-                    </li>
-                  </a>
+                    </a>
+                  </li>
                 </ul>
               </li>
             </ul>
@@ -132,21 +241,119 @@ function App() {
           <nav className="main-menu-mobile">
             <ul>
               <li>
-                <ul>
-                  <a href="https://www.28thblvd.com">
-                    <li style={{ color: isTan ? '#333' : '#fff' }}>Zine</li>
-                  </a>
-                </ul>
+                <button 
+                  onClick={() => setCurrentView('visionboard')}
+                  style={{ 
+                    background: 'none',
+                    border: 'none',
+                    padding: 0,
+                    cursor: 'pointer',
+                    textDecoration: 'none',
+                    width: '100%',
+                    textAlign: 'left',
+                    color: isTan ? '#333' : '#fff'
+                  }}
+                >
+                  Vision
+                </button>
               </li>
               <li>
-                <ul>
-                  <a href="mailto:ericajhawkins@gmail.com">
-                    <li style={{ color: isTan ? '#333' : '#fff' }}>Contact</li>
-                  </a>
-                </ul>
+                <button 
+                  onClick={() => setCurrentView('moodboard')}
+                  style={{ 
+                    background: 'none',
+                    border: 'none',
+                    padding: 0,
+                    cursor: 'pointer',
+                    textDecoration: 'none',
+                    width: '100%',
+                    textAlign: 'left',
+                    color: isTan ? '#333' : '#fff'
+                  }}
+                >
+                  Materials
+                </button>
+              </li>
+              <li>
+                <div style={{ color: isTan ? '#333' : '#fff' }}>Zines</div>
+              </li>
+              <li>
+                <button
+                  onClick={() => setCurrentView('moodboard')}
+                  style={{
+                    background: 'none',
+                    border: 'none',
+                    padding: 0,
+                    cursor: 'pointer',
+                    textDecoration: 'none',
+                    width: '100%',
+                    textAlign: 'left',
+                    color: isTan ? '#333' : '#fff'
+                  }}
+                >
+                  CatwalkFM
+                </button>
+              </li>
+              <li>
+                <button
+                  onClick={() => setCurrentView('moodboard')}
+                  style={{
+                    background: 'none',
+                    border: 'none',
+                    padding: 0,
+                    cursor: 'pointer',
+                    textDecoration: 'none',
+                    width: '100%',
+                    textAlign: 'left',
+                    color: isTan ? '#333' : '#fff'
+                  }}
+                >
+                  Sketchbook
+                </button>
+              </li>
+              <li>
+                <a 
+                  href="mailto:erica.janel.hawkins@outlook.com"
+                  style={{
+                    textDecoration: 'none',
+                    color: isTan ? '#333' : '#fff',
+                    display: 'block'
+                  }}
+                >
+                  Contact
+                </a>
               </li>
             </ul>
           </nav>
+
+          {/* Mobile Navigation Overlay */}
+          <div 
+            className={`mobile-nav-overlay ${isMobileMenuOpen ? 'open' : ''}`}
+            onClick={(e) => {
+              // Close menu when clicking outside the nav menu
+              if (e.target.classList.contains('mobile-nav-overlay')) {
+                setIsMobileMenuOpen(false);
+              }
+            }}
+          >
+            <div className="mobile-nav-menu">
+              <button onClick={() => handleNavClick('fashion')}>
+                Fashion
+              </button>
+              <button onClick={() => handleNavClick('portfolio')}>
+                Work
+              </button>
+              <button onClick={() => handleNavClick('visionboard')}>
+                Vision Board
+              </button>
+              <button onClick={() => handleNavClick('moodboard')}>
+                Materials
+              </button>
+              <button onClick={() => handleNavClick('portfolio')}>
+                Zines
+              </button>
+            </div>
+          </div>
         </div>
       </header>
 
@@ -156,11 +363,20 @@ function App() {
             {isTan ? 'Rosy Shades' : 'Down to Earth'}
           </button>
         </div>
-        {currentView === 'home' ? <FashionSelection /> : <PortfolioSelection onBackToHome={() => setCurrentView('home')} />}
+        {currentView === 'home' ? (
+          <FashionSelection />
+        ) : currentView === 'portfolio' ? (
+          <PortfolioSelection onBackToHome={() => setCurrentView('home')} />
+        ) : currentView === 'visionboard' ? (
+          <VisionBoard />
+        ) : currentView === 'moodboard' ? (
+          <Moodboard />
+        ) : (
+          <FashionSelection />
+        )}
       </main>
     </div>
   );
 }
 
 export default App;
-
