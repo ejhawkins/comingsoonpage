@@ -60,7 +60,14 @@ function App() {
         <div className="header-content">
           {/* Logo placeholder on the left */}
           <div className="logo-wrapper" style={{ display: 'flex', alignItems: 'center', padding: '12px 20px' }}>
-            <img src={logoPlaceholder} alt="Logo" style={{ height: 36, width: 'auto' }} />
+            <a
+              href="#"
+              onClick={(e) => { e.preventDefault(); handleNavClick('portfolio'); }}
+              style={{ display: 'inline-block', textDecoration: 'none' }}
+              aria-label="Go to Projects"
+            >
+              <img src={logoPlaceholder} alt="Logo" style={{ height: 36, width: 'auto' }} />
+            </a>
           </div>
           <button id="toggleButtonmobile" onClick={toggleBackground} style={{
             color: isTan ? '#333' : '#fff',
