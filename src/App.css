@@ -341,53 +341,6 @@ html, body {
             letter-spacing: 25px;
         }
 
-        /* Contact list: make consistent with main menu and remove accidental rotation */
-        .contact {
-            width: auto;
-            transform: none;
-            display: inline-flex; /* same layout as other top-level items */
-            align-items: center;
-            gap: 12px;
-            padding: 0;
-            margin: 0;
-            list-style: none;
-        }
-
-        /* Ensure nested list items inside .contact match main menu typography */
-        .contact li {
-            display: inline-flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: flex-start;
-            padding: 0 12px;
-            color: #333;
-            font-size: 36px;
-            font-family: 'Aeonik Pro', sans-serif;
-            font-weight: 700;
-            text-align: right;
-            letter-spacing: 0; /* don't apply hover spacing by default */
-        }
-
-        .contact li p {
-            margin: 0;
-            font-size: 0.9em;
-            opacity: 0.9;
-            font-weight: 400;
-        }
-
-        /* Anchor wrapping the contact items should be unobtrusive and inherit text styles */
-        .contact a {
-            color: inherit;
-            text-decoration: none;
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-        }
-
-        /* Preserve hover behavior but less aggressive for contact */
-        .contact li:hover {
-            letter-spacing: 6px;
-        }
 
         ul li ul li p{
             font-size: 20px;
